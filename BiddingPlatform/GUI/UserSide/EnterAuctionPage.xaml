@@ -1,0 +1,49 @@
+﻿<Page x:Class="BiddingPlatform.GUI.EnterAuctionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BiddingPlatform.GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EnterAuctionPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!-- Bid History -->
+        <Label Content="Bid History" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Panel.ZIndex="2" FontSize="24" FontFamily="Agency FB"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="20" IsEnabled="False"/>
+
+        <!-- Current Bid -->
+        <TextBox Grid.Row="1" Grid.Column="2" Margin="55 30 20 20" IsEnabled="False"></TextBox>
+
+        <!-- Time Left -->
+        <TextBox Grid.Row="1" Grid.Column="3" Margin="20 30 55 20" IsEnabled="False"></TextBox>
+
+        <!-- Auction Name -->
+        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,30" IsEnabled="False"></TextBox>
+
+        <!-- Enter Sum -->
+        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="100,65,100,65" Text="Enter The sum" TextAlignment="Center" FontSize="36" FontFamily="Agency FB" Grid.RowSpan="2"/>
+
+        <!-- Bid Button -->
+        <Button Grid.Column="3" Margin="60,30,60,22" Grid.Row="3" Content="Bid" FontFamily="Agency FB" FontSize="24"/>
+
+        <!-- Back Button -->
+        <Button Grid.Column="3" Grid.Row="4" Margin="85 20 20 20" Content="Back" FontSize="22" FontFamily="Agency FB" ></Button>
+    </Grid>
+</Page>

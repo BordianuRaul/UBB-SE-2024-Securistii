@@ -1,0 +1,14 @@
+﻿<Window x:Class="BiddingPlatform.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiddingPlatform"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="MainGrid">
+        <Frame x:Name="MainFrame"/>
+        <Button x:Name="UserButton" Content="Enter the Auction Platform as User" Width="300" Height="150" Click="UserClick" Margin="250,39,250,245"></Button>
+        <Button x:Name="AdminButton" Content="Enter the Auction Platform as Administrator" Width="300" Height="150" Click="AdminClick" Margin="250,235,250,49"></Button>
+    </Grid>
+</Window>
