@@ -1,0 +1,50 @@
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.exe
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.deps.json
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.runtimeconfig.json
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.dll
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.pdb
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\App.g.cs
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.cache
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.lref
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.baml
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.g.resources
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.GeneratedMSBuildEditorConfig.editorconfig
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfoInputs.cache
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfo.cs
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.csproj.CoreCompileInputs.cache
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.dll
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\refint\BiddingPlatform.dll
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.pdb
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.genruntimeconfig.cache
+D:\eu\Documente\Documente facultate\SEM 4\ISS\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\ref\BiddingPlatform.dll
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.cache
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.lref
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.dll
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\refint\BiddingPlatform.dll
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.pdb
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.exe
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.g.resources
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfoInputs.cache
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfo.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.deps.json
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.runtimeconfig.json
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.dll
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.pdb
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.genruntimeconfig.cache
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\ref\BiddingPlatform.dll
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\AuctionDetailsPage.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\EnterAuctionPage.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\LiveAuctionPage.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\AuctionDetailsPage.baml
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\EnterAuctionPage.baml
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\LiveAuctionPage.baml
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AddAuctionPage.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AdminLiveAuctionPage.g.cs
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AdminLiveAuctionPage.baml
+C:\Users\Ale\Desktop\BiddingPlatform\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AddAuctionPage.baml
