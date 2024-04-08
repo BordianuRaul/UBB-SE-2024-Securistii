@@ -8,21 +8,18 @@ namespace BiddingPlatform.User
 {
     public class BasicUser : UserTemplate
     {
+        private int Userid { get; set; }
         private string username { get; set; }
         private string nickname { get; set; }
 
-        public BasicUser(string _username) : base(_username)
+        public BasicUser(int _id, string _username, string _nickname) : base(_id, _username)
         {
             this.username = _username;
-            this.nickname = generateNickname();
-        }
-
-        private string generateNickname()
-        {
-            Random rand = new Random();
-            return "MaliciousUser" + rand.Next(100000, 1000000).ToString();
+            this.nickname = _nickname;
+            this.Userid = _id;
         }
 
         public string getNickname() {  return nickname; }
+        public void setNickname(string _nickname) {  nickname = _nickname; }
     }
 }
