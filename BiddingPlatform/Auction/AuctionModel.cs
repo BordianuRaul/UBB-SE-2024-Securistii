@@ -15,10 +15,10 @@ namespace BiddingPlatform.Auction
         public string description {  get; set; }
         public string name { get; set; }
         public float currentMaxSum {  get; set; }
-        public List<UserTemplate> listOfUsers { get; set; }
+        public List<BasicUser> listOfUsers { get; set; }
         public List<BidModel> listOfBids { get; set; }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<UserTemplate> listOfUsers, List<BidModel> listOfBids)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<BidModel> listOfBids)
         {
             this.auctionId = _id;
             this.startingDate = startingDate;
@@ -36,11 +36,11 @@ namespace BiddingPlatform.Auction
             this.description = description;
             this.name = name;
             this.currentMaxSum = currentMaxSum;
-            this.listOfUsers = new List<UserTemplate>();
+            this.listOfUsers = new List<BasicUser>();
             this.listOfBids = new List<BidModel>();
         }
 
-        public void addUserToAuction(UserTemplate user)
+        public void addUserToAuction(BasicUser user)
         {
             this.listOfUsers.Add(user);
         }

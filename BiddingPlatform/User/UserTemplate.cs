@@ -8,7 +8,7 @@ namespace BiddingPlatform.User
 {
     public class UserTemplate
     {
-        private int Userid {  get; set; }
+        private int Userid { get; set; }
         private string username { get; set; }
 
         public UserTemplate(int _id, string _username)
@@ -17,9 +17,9 @@ namespace BiddingPlatform.User
             this.username = _username;
         }
 
-        public string getUsername() {  return username; }
+        public string getUsername() { return username; }
 
-        public void setUsername(string _username) {  username = _username; }
+        public void setUsername(string _username) { username = _username; }
         public int getId() { return Userid; }
         public void setId(int _id)
         {

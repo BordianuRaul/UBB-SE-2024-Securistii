@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,18 +9,53 @@ namespace BiddingPlatform.User
 {
     public class UserRepository
     {
+        private string ConnectionString { get; set; }
         private List<UserTemplate> listOfUsers { get; set; }
         public UserRepository() { 
             this.listOfUsers = new List<UserTemplate>();
+            this.LoadUsersFromDataBase();
         }
+
 
         public UserRepository(List<UserTemplate> _listOfUsers)
         {
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=Lab3_Week8;Integrated Security=true";
             this.listOfUsers = _listOfUsers;
+        }
+        private void LoadUsersFromDataBase()
+        {
+            string query = "SELECT * FROM Users";
+            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int userId = Convert.ToInt32(reader["UserID"]);
+                    string username = reader["Username"].ToString();
+                    string nickname = reader["Nickname"].ToString();
+                    string userType = reader["UserType"].ToString();
+
+                    UserTemplate user;
+                    if (userType == "Basic")
+                    {
+                        user = new BasicUser(userId, username, nickname);
+                    }
+                    else
+                    {
+                        user = new AdminUser(userId, username);
+                    }
+
+                    this.addUserToRepo(user);
+                }
+            }
         }
 
         public void addUserToRepo(UserTemplate User) 
         {
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=Lab3_Week8;Integrated Security=true";
             this.listOfUsers.Add(User);
         }
 

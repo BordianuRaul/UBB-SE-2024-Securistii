@@ -16,19 +16,19 @@ namespace BiddingPlatform.Bid
             BidRepository = bidRepository;
         }
 
-        public void addBid(int id, UserTemplate user, float bidSum, DateTime  biddate)
+        public void addBid(int id, BasicUser user, float bidSum, DateTime  biddate)
         {
             BidModel toadd = new BidModel(id, user, bidSum, biddate);
             this.BidRepository.addBidToRepo(toadd);
         }
 
-        public void removeBid(int id, UserTemplate user, float bidSum, DateTime biddate)
+        public void removeBid(int id, BasicUser user, float bidSum, DateTime biddate)
         {
             BidModel toremove = new BidModel(id, user, bidSum, biddate);
             this.BidRepository.deleteBidFromRepo(toremove);
         }
 
-        public void updateBid(int id, UserTemplate olduser, float oldbidSum, DateTime oldbiddate, UserTemplate newuser, float newbidSum, DateTime newbiddate)
+        public void updateBid(int id, BasicUser olduser, float oldbidSum, DateTime oldbiddate, BasicUser newuser, float newbidSum, DateTime newbiddate)
         {
             BidModel oldbid = new BidModel(id, olduser, oldbidSum, oldbiddate);
             BidModel newbid = new BidModel(id, newuser, newbidSum, newbiddate);
