@@ -49,5 +49,6 @@ namespace BiddingPlatform.Auction
         {
             this.listOfBids.Add(bid);
         }
+
     }
 }

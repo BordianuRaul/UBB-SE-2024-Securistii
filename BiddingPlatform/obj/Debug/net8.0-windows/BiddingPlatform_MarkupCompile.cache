@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\obj\Debug\net8.0-windows\
+C:\Users\User\S\UBB-SE-2024-Securistii\BiddingPlatform\obj\Debug\net8.0-windows\
 BiddingPlatform
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\App.xaml
+C:\Users\User\S\UBB-SE-2024-Securistii\BiddingPlatform\App.xaml
 6-581314418
 
 201652900668
-199-607767107
+199435372055
 GUI\AdminSide\AddAuctionPage.xaml;GUI\AdminSide\AdminLiveAuctionPage.xaml;GUI\UserSide\AuctionDetailsPage.xaml;GUI\UserSide\EnterAuctionPage.xaml;GUI\UserSide\LiveAuctionPage.xaml;MainWindow.xaml;
 
 False
