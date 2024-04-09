@@ -1,0 +1,312 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Quick access files\\ISS\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\liveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\liveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\auctiondetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\auctiondetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\auctiondetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\auctiondetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\enterauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\enterauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\bid\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\bid\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\auction\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\auction\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\userside\\enterauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\enterauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\bid\\bidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\bid\\bidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\bid\\bidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\bid\\bidrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\adminside\\addauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\adminside\\addauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|d:\\quick access files\\iss\\project\\biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnterAuctionPage.xaml.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAxwCkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:50:03.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BidRepository.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidRepository.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidRepository.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidRepository.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidRepository.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowBgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:49:20.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BidService.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidService.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidService.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidService.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwCUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T11:58:24.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuctionModel.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionModel.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionModel.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionModel.cs",
+              "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionModel.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:52:02.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuctionDetailsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAIwCkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T11:55:25.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LiveAuctionPage.xaml.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs*",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs*",
+              "ViewState": "AQIAADQAAAAAAAAAAIAxwEQAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:50:42.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminLiveAuctionPage.xaml.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAArwB0AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T13:04:57.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BidModel.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidModel.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidModel.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Bid\\BidModel.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:38:46.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuctionService.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionService.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionService.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionService.cs",
+              "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAmwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:57:39.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuctionRepository.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionRepository.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionRepository.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\Auction\\AuctionRepository.cs",
+              "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAArwBMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:38:51.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminLiveAuctionPage.xaml",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T11:30:59.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddAuctionPage.xaml",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T11:31:05.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserRepository.cs",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\User\\UserRepository.cs",
+              "RelativeToolTip": "BiddingPlatform\\User\\UserRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:54:04.176Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b91dc06d-5d4b-44a1-b411-debaabf1eb02",
+        "Display": 2,
+        "X": 780,
+        "Y": 479,
+        "Width": 1254,
+        "Height": 639,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnterAuctionPage.xaml",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T10:50:37.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuctionDetailsPage.xaml",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T11:31:31.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LiveAuctionPage.xaml",
+              "DocumentMoniker": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
+              "ToolTip": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T10:50:43.531Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

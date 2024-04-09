@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BiddingPlatform.Auction;
+using BiddingPlatform.Bid;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,22 @@ namespace BiddingPlatform.GUI
     /// </summary>
     public partial class EnterAuctionPage : Page
     {
+        public AuctionRepository auctionrepository;
+        public AuctionService AuctionService;
+        public BidRepository BidRepository;
+        public BidService BidService;
+        public List<BidModel> bidModels;
         public EnterAuctionPage()
         {
             InitializeComponent();
+            this.auctionrepository = new AuctionRepository();
+            this.BidRepository = new BidRepository();
+            this.BidService = new BidService(BidRepository);
+            this.AuctionService = new AuctionService(auctionrepository);
+            List<BidModel> bidModels = this.BidService.getBids();
+
+            BidHisotryBox.Text = bidModels[0].bidSum.ToString();
+
         }
     }
 }

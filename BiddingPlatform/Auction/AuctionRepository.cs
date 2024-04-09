@@ -15,13 +15,14 @@ namespace BiddingPlatform.Auction
         public List<AuctionModel> listOfAuctions {  get; set; }
         public AuctionRepository() 
         {
-            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=Lab3_Week8;Integrated Security=true";
+            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfAuctions = new List<AuctionModel>();
+            this.LoadAuctionsFromDatabase();
         }
 
         public AuctionRepository(List<AuctionModel> listOfAuctions)
         {
-            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=Lab3_Week8;Integrated Security=true";
+            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfAuctions = listOfAuctions;
         }
 
@@ -43,12 +44,10 @@ namespace BiddingPlatform.Auction
                     string auctionName = reader["AuctionName"].ToString();
                     float currentMaxSum = Convert.ToSingle(reader["CurrentMaxSum"]);
                     DateTime dateOfStart = Convert.ToDateTime(reader["DateOfStart"]);
-                    int userId = Convert.ToInt32(reader["UserID"]);
-                    int bidId = Convert.ToInt32(reader["BidID"]);
 
 
-                    List<BasicUser> users = LoadUserFromDatabase(userId);
-                    List<BidModel> bids = LoadBidFromDatabase(bidId);
+                    List<BasicUser> users = LoadUserFromDatabase(auctionId);
+                    List<BidModel> bids = LoadBidFromDatabase(auctionId);
 
 
                     AuctionModel auction = new AuctionModel(auctionId, dateOfStart, auctionDescription, auctionName, currentMaxSum, users, bids);
@@ -85,15 +84,15 @@ namespace BiddingPlatform.Auction
         }
 
 
-        private List<BidModel> LoadBidFromDatabase(int bidId)
+        private List<BidModel> LoadBidFromDatabase(int auctionID)
         {
             List<BidModel> bids = new List<BidModel>();
 
             using (SqlConnection connection = new SqlConnection(this.ConnectionString))
             {
-                string query = "SELECT * FROM Bid WHERE BidID = @bidId";
+                string query = @"EXEC GetBidsFromAuction @AuctionID = @auctionId";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@bidId", bidId);
+                command.Parameters.AddWithValue("AuctionID", auctionID);
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();

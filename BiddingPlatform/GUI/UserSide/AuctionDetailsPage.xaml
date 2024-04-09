@@ -26,16 +26,16 @@
 
         <!-- Bid History -->
         <Label Content="Bid History" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Panel.ZIndex="2" FontSize="24" FontFamily="Agency FB"/>
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="20" IsEnabled="False" FontFamily="Agency FB"/>
+        <TextBox  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="20" IsEnabled="False" FontFamily="Agency FB"/>
 
         <!-- Current Bid -->
-        <TextBox Grid.Row="1" Grid.Column="2" Margin="55 30 20 20" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+        <TextBox x:Name="CurrentBid" Grid.Row="1" Grid.Column="2" Margin="55 30 20 20" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
         <!-- Time Left -->
-        <TextBox Grid.Row="1" Grid.Column="3" Margin="20 30 55 20" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+        <TextBox x:Name="TimeLeft" Grid.Row="1" Grid.Column="3" Margin="20 30 55 20" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
         <!-- Auction Name -->
-        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+        <TextBox x:Name="AuctionNameBid" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
         <!-- Join Button -->
 

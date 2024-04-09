@@ -87,3 +87,42 @@ C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\ob
 C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\obj\Debug\net8.0-windows\BiddingP.4562A5E0.Up2Date
 C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.genruntimeconfig.cache
 C:\Users\Raul\Desktop\ISS\BidingSystem\UBB-SE-2024-Securistii\BiddingPlatform\obj\Debug\net8.0-windows\ref\BiddingPlatform.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.exe
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.deps.json
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.runtimeconfig.json
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\BiddingPlatform.pdb
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.csproj.AssemblyReference.cache
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AddAuctionPage.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AdminLiveAuctionPage.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\AuctionDetailsPage.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\EnterAuctionPage.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\LiveAuctionPage.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\App.g.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.cache
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform_MarkupCompile.lref
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AddAuctionPage.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\AdminSide\AdminLiveAuctionPage.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\AuctionDetailsPage.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\EnterAuctionPage.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\GUI\UserSide\LiveAuctionPage.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.g.resources
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.GeneratedMSBuildEditorConfig.editorconfig
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfoInputs.cache
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.AssemblyInfo.cs
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.csproj.CoreCompileInputs.cache
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.sourcelink.json
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingP.4562A5E0.Up2Date
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\refint\BiddingPlatform.dll
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.pdb
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\BiddingPlatform.genruntimeconfig.cache
+D:\Quick access files\ISS\Project\BiddingPlatform\obj\Debug\net8.0-windows\ref\BiddingPlatform.dll
