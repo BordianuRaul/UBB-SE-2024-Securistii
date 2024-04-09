@@ -9,15 +9,17 @@ namespace BiddingPlatform.Bid
 {
     public class BidModel
     {
+        public int bidId { get; set; }
         public UserTemplate user { get; set; }
         public float bidSum { get; set; }
         public DateTime bidDate { get; set; }
 
-        public BidModel(UserTemplate user, float bidSum, DateTime bidDate)
+        public BidModel(int _id, UserTemplate _user, float _bidSum, DateTime _bidDate)
         {
-            this.user = user;
-            this.bidSum = bidSum;
-            this.bidDate = bidDate;
+            this.bidId = _id;
+            this.user = _user;
+            this.bidSum = _bidSum;
+            this.bidDate = _bidDate;
         }
     }
 }

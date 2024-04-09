@@ -10,6 +10,7 @@ namespace BiddingPlatform.Auction
 {
     public class AuctionModel
     {
+        public int auctionId {  get; set; }
         public DateTime startingDate { get; set; }
         public string description {  get; set; }
         public string name { get; set; }
@@ -17,8 +18,9 @@ namespace BiddingPlatform.Auction
         public List<UserTemplate> listOfUsers { get; set; }
         public List<BidModel> listOfBids { get; set; }
 
-        public AuctionModel(DateTime startingDate, string description, string name, float currentMaxSum, List<UserTemplate> listOfUsers, List<BidModel> listOfBids)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<UserTemplate> listOfUsers, List<BidModel> listOfBids)
         {
+            this.auctionId = _id;
             this.startingDate = startingDate;
             this.description = description;
             this.name = name;
@@ -27,8 +29,9 @@ namespace BiddingPlatform.Auction
             this.listOfBids = listOfBids;
         }
 
-        public AuctionModel(DateTime startingDate, string description, string name, float currentMaxSum)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum)
         {
+            this.auctionId = _id;
             this.startingDate = startingDate;
             this.description = description;
             this.name = name;

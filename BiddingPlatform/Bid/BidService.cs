@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BiddingPlatform.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,18 +16,22 @@ namespace BiddingPlatform.Bid
             BidRepository = bidRepository;
         }
 
-        public void addBid(BidModel bid)
+        public void addBid(int id, UserTemplate user, float bidSum, DateTime  biddate)
         {
-            this.BidRepository.addBidToRepo(bid);
+            BidModel toadd = new BidModel(id, user, bidSum, biddate);
+            this.BidRepository.addBidToRepo(toadd);
         }
 
-        public void removeBid(BidModel bid)
+        public void removeBid(int id, UserTemplate user, float bidSum, DateTime biddate)
         {
-            this.BidRepository.deleteBidFromRepo(bid);
+            BidModel toremove = new BidModel(id, user, bidSum, biddate);
+            this.BidRepository.deleteBidFromRepo(toremove);
         }
 
-        public void updateBid(BidModel oldbid, BidModel newbid)
+        public void updateBid(int id, UserTemplate olduser, float oldbidSum, DateTime oldbiddate, UserTemplate newuser, float newbidSum, DateTime newbiddate)
         {
+            BidModel oldbid = new BidModel(id, olduser, oldbidSum, oldbiddate);
+            BidModel newbid = new BidModel(id, newuser, newbidSum, newbiddate);
             this.BidRepository.updateBidIntoRepo(oldbid, newbid);
         }
 

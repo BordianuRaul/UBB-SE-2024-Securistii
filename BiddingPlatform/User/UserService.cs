@@ -15,18 +15,34 @@ namespace BiddingPlatform.User
             UserRepository = userRepository; 
         }
 
-        public void addUser(UserTemplate User)
+        private string generateNickname()
         {
-            this.UserRepository.addUserToRepo(User);
+            Random rand = new Random();
+            return "MaliciousUser" + rand.Next(100000, 1000000).ToString();
         }
 
-        public void removeUser(UserTemplate User)
+        public void addBasicUser(int id, string username)
         {
-            this.UserRepository.removeUserFromRepo(User);
+            BasicUser toAdd = new BasicUser(id, username, generateNickname());
+            this.UserRepository.addUserToRepo(toAdd);
         }
 
-        public void updateUser(UserTemplate olduser, UserTemplate newuser) 
+        public void addAdminUser(int id, string username)
         {
+            AdminUser toAdd = new AdminUser(id, username);
+            this.UserRepository.addUserToRepo(toAdd);
+        }
+
+        public void removeUser(int id, string username)
+        {
+            UserTemplate toremove = new UserTemplate(id, username);
+            this.UserRepository.removeUserFromRepo(toremove);
+        }
+
+        public void updateUser(int id, string oldname, string newname)
+        {
+            UserTemplate olduser = new UserTemplate(id, oldname);
+            UserTemplate newuser = new UserTemplate(id, newname);
             this.UserRepository.updateUserIntoRepo(olduser, newuser);
         }
 
