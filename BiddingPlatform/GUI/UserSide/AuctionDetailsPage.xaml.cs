@@ -38,12 +38,21 @@ namespace BiddingPlatform.GUI
             this.BidRepository = new BidRepository();
             this.BidService = new BidService(BidRepository);
             this.AuctionService = new AuctionService(auctionrepository);
-            List<BidModel> bidModels = this.BidService.getBids();
+            //List<BidModel> bidModels = this.BidService.getBids();
             List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            
 
             AuctionNameBid.Text= auctions[index].name;
             CurrentBid.Text = auctions[index].currentMaxSum.ToString();
             TimeLeft.Text= (DateTime.Now - auctions[index].startingDate).Hours.ToString();
+
+
+            int n= auctions[index].listOfBids.Count;
+            for(int i=0; i<n; i++)
+            {
+                BidHistory.Text += auctions[index].listOfBids[i].bidSum.ToString() + "\n";
+            }
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -54,7 +63,7 @@ namespace BiddingPlatform.GUI
 
         private void JoinAuction(object sender, RoutedEventArgs e)
         {
-            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage();
+            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage(auctionIndex);
             NavigationService?.Navigate(EnterAuctionPage);
         }
     }

@@ -26,24 +26,24 @@
 
         <!-- Bid History -->
         <Label Content="Bid History" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Panel.ZIndex="2" FontSize="24" FontFamily="Agency FB"/>
-        <TextBox x:Name="BidHisotryBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="20" IsEnabled="False"/>
+        <TextBox x:Name="BidHistory" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="20" IsEnabled="False"/>
 
         <!-- Current Bid -->
-        <TextBox Grid.Row="1" Grid.Column="2" Margin="55 30 20 20" IsEnabled="False"></TextBox>
+        <TextBox x:Name="CurrentBid" Grid.Row="1" Grid.Column="2" Margin="55 30 20 20" IsEnabled="False"></TextBox>
 
         <!-- Time Left -->
-        <TextBox Grid.Row="1" Grid.Column="3" Margin="20 30 55 20" IsEnabled="False"></TextBox>
+        <TextBox x:Name="TimeLeft" Grid.Row="1" Grid.Column="3" Margin="20 30 55 20" IsEnabled="False"></TextBox>
 
         <!-- Auction Name -->
-        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,30" IsEnabled="False"></TextBox>
+        <TextBox x:Name="AuctionNameBid" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="20,0,20,30" IsEnabled="False"></TextBox>
 
         <!-- Enter Sum -->
-        <TextBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="100,65,100,65" Text="Enter The sum" TextAlignment="Center" FontSize="36" FontFamily="Agency FB" Grid.RowSpan="2"/>
+        <TextBox x:Name="SumInput" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="100,65,100,65" TextAlignment="Center" FontSize="36" FontFamily="Agency FB" Grid.RowSpan="2" />
 
         <!-- Bid Button -->
-        <Button Grid.Column="3" Margin="60,30,60,22" Grid.Row="3" Content="Bid" FontFamily="Agency FB" FontSize="24"/>
+        <Button Grid.Column="3" Margin="60,30,60,22" Grid.Row="3" Content="Bid" FontFamily="Agency FB" FontSize="24" Click="Button_Click_1"/>
 
         <!-- Back Button -->
-        <Button Grid.Column="3" Grid.Row="4" Margin="85 20 20 20" Content="Back" FontSize="22" FontFamily="Agency FB" ></Button>
+        <Button Grid.Column="3" Grid.Row="4" Margin="85 20 20 20" Content="Back" FontSize="22" FontFamily="Agency FB" Click="Button_Click" ></Button>
     </Grid>
 </Page>
