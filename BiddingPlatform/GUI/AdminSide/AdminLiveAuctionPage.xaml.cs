@@ -27,7 +27,7 @@ namespace BiddingPlatform.GUI.AdminSide
 
         private void EnterAuction(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage();
+            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(1);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 

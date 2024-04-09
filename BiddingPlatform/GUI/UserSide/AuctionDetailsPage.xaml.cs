@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BiddingPlatform.Auction;
+using BiddingPlatform.Bid;
+using BiddingPlatform.User;
 
 namespace BiddingPlatform.GUI
 {
@@ -20,9 +23,36 @@ namespace BiddingPlatform.GUI
     /// </summary>
     public partial class AuctionDetailsPage : Page
     {
-        public AuctionDetailsPage()
+        public int auctionIndex;
+        public AuctionRepository auctionrepository;
+        public AuctionService AuctionService;
+        public BidRepository BidRepository;
+        public BidService BidService;
+        public List<BidModel> bidModels;
+        public List<AuctionModel> auctions;
+        public AuctionDetailsPage(int index)
         {
             InitializeComponent();
+            auctionIndex = index;
+            this.auctionrepository = new AuctionRepository();
+            this.BidRepository = new BidRepository();
+            this.BidService = new BidService(BidRepository);
+            this.AuctionService = new AuctionService(auctionrepository);
+            //List<BidModel> bidModels = this.BidService.getBids();
+            List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            
+
+            AuctionNameBid.Text= auctions[index].name;
+            CurrentBid.Text = auctions[index].currentMaxSum.ToString();
+            TimeLeft.Text= (DateTime.Now - auctions[index].startingDate).Hours.ToString();
+
+
+            int n= auctions[index].listOfBids.Count;
+            for(int i=0; i<n; i++)
+            {
+                BidHistory.Text += auctions[index].listOfBids[i].bidSum.ToString() + "\n";
+            }
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +63,7 @@ namespace BiddingPlatform.GUI
 
         private void JoinAuction(object sender, RoutedEventArgs e)
         {
-            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage();
+            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage(auctionIndex);
             NavigationService?.Navigate(EnterAuctionPage);
         }
     }
