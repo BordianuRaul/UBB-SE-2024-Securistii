@@ -19,6 +19,7 @@ namespace BiddingPlatform.Bid
         public void addBid(int id, BasicUser user, float bidSum, DateTime  biddate)
         {
             BidModel toadd = new BidModel(id, user, bidSum, biddate);
+
             this.BidRepository.addBidToRepo(toadd);
         }
 

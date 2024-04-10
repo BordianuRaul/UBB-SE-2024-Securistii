@@ -39,5 +39,15 @@ namespace BiddingPlatform.Auction
             AuctionModel newauction = new AuctionModel(id, newstartingDate, newdescription, newname, newcurrentMaxSum);
             this.AuctionRepository.updateAuctionIntoRepo(oldauction, newauction);
         }
+
+        public float getMaxBidSum(int index)
+        {
+            return this.AuctionRepository.getBidMaxSum(index);
+        }
+
+        public void addBid(string name, string description, DateTime date, float currentMaxSum)
+        {
+            this.AuctionRepository.addToDB(name, description, date, currentMaxSum);
+        }
     }
 }

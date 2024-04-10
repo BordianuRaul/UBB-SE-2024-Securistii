@@ -19,7 +19,7 @@ namespace BiddingPlatform.User
 
         public UserRepository(List<UserTemplate> _listOfUsers)
         {
-            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfUsers = _listOfUsers;
         }
         private void LoadUsersFromDataBase()
@@ -55,7 +55,7 @@ namespace BiddingPlatform.User
 
         public void addUserToRepo(UserTemplate User) 
         {
-            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfUsers.Add(User);
         }
 
