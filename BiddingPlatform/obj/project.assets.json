@@ -470,23 +470,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Birou Rares\\.nuget\\packages\\": {},
+    "C:\\Users\\Raul\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\BiddingPlatform.csproj",
+      "projectUniqueName": "C:\\Users\\Raul\\Desktop\\ISS\\BidingSystem\\UBB-SE-2024-Securistii\\BiddingPlatform\\BiddingPlatform.csproj",
       "projectName": "BiddingPlatform",
-      "projectPath": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\BiddingPlatform.csproj",
-      "packagesPath": "C:\\Users\\Birou Rares\\.nuget\\packages\\",
-      "outputPath": "D:\\Quick access files\\ISS\\Project\\BiddingPlatform\\obj\\",
+      "projectPath": "C:\\Users\\Raul\\Desktop\\ISS\\BidingSystem\\UBB-SE-2024-Securistii\\BiddingPlatform\\BiddingPlatform.csproj",
+      "packagesPath": "C:\\Users\\Raul\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Raul\\Desktop\\ISS\\BidingSystem\\UBB-SE-2024-Securistii\\BiddingPlatform\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Birou Rares\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Raul\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

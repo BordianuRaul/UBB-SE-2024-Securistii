@@ -3,6 +3,7 @@ using BiddingPlatform.Bid;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -60,12 +61,16 @@ namespace BiddingPlatform.GUI
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
             int suminput = 0;
             if (!int.TryParse(SumInput.Text, out suminput))
             {
                 MessageBox.Show("Please enter a valid number");
                 return;
+            }
+            suminput = Convert.ToInt32(SumInput.Text);
+            if (suminput <= this.AuctionService.getMaxBidSum(auctionIndex))
+            {
+                MessageBox.Show("Invalid bid sum!\n The bid must be greater than that current maximum one.");
             }
             suminput = Convert.ToInt32(SumInput.Text);
             BidHistory.Text += suminput.ToString() + "\n";

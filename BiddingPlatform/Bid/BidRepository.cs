@@ -15,14 +15,14 @@ namespace BiddingPlatform.Bid
 
         public BidRepository() 
         {
-            this.connectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.connectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.Bids = new List<BidModel>();
             this.LoadBidsFromDatabase();
         }
 
         public BidRepository(List<BidModel> bids)
         {
-            this.connectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.connectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             Bids = bids;
         }
 

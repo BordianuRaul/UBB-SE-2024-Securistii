@@ -37,17 +37,17 @@ namespace BiddingPlatform.GUI
             
             name1.Text= auctions[0].name;
             name2.Text = auctions[1].name;
-            name3.Text= auctions[2].name;
+            //name3.Text= auctions[2].name;
             description1.Text = auctions[0].description;
             description2.Text = auctions[1].description;
-            description3.Text = auctions[2].description;
+            //description3.Text = auctions[2].description;
             price1.Text = auctions[0].currentMaxSum.ToString();
             price2.Text = auctions[1].currentMaxSum.ToString();
-            price3.Text = auctions[2].currentMaxSum.ToString();
+            //price3.Text = auctions[2].currentMaxSum.ToString();
             
             time1.Text= (DateTime.Now - auctions[0].startingDate).Hours.ToString();
             time2.Text = (DateTime.Now - auctions[1].startingDate).Hours.ToString();
-            time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
+            //time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

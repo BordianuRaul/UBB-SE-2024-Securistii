@@ -15,14 +15,14 @@ namespace BiddingPlatform.Auction
         public List<AuctionModel> listOfAuctions {  get; set; }
         public AuctionRepository() 
         {
-            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfAuctions = new List<AuctionModel>();
             this.LoadAuctionsFromDatabase();
         }
 
         public AuctionRepository(List<AuctionModel> listOfAuctions)
         {
-            this.ConnectionString = "Data Source=Birou;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfAuctions = listOfAuctions;
         }
 
@@ -142,12 +142,30 @@ namespace BiddingPlatform.Auction
 
         }
 
-
-
         public void addAuctionToRepo(AuctionModel auction)
         {
             listOfAuctions.Add(auction);
+            
         }
+
+        public void addToDB(string name, string description, DateTime date, float currentMaxSum)
+        {
+            string query = @"INSERT INTO Auction (DateOfStart, AuctionDescription, AuctionName, CurrentMaxSum) 
+                     VALUES (@DateOfStart, @AuctionDescription, @AuctionName, @CurrentMaxSum)";
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@DateOfStart", date);
+                command.Parameters.AddWithValue("@AuctionDescription", description);
+                command.Parameters.AddWithValue("@AuctionName", name);
+                command.Parameters.AddWithValue("@CurrentMaxSum", currentMaxSum);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
 
         public void removeAuctionFromRepo(AuctionModel auction)
         {
@@ -162,5 +180,11 @@ namespace BiddingPlatform.Auction
                 this.listOfAuctions[oldauctionIndex] = newauction;
             }
         }
+
+        public float getBidMaxSum(int index)
+        {
+            return this.listOfAuctions[index].currentMaxSum;
+        }
+
     }
 }
