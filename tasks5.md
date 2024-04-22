@@ -53,7 +53,7 @@ Mihh
 - test AdminUser
 - test BasicUser
 
-- __FOR TESTING, WE NEED TO WRITE THEM IN OSHEROVE STYLE:__
+__FOR TESTING, WE NEED TO WRITE THEM IN OSHEROVE STYLE:__
 
 Osherove-style unit tests, named after Roy Osherove, are a convention for writing unit tests that emphasizes readability, maintainability, and clarity. Roy Osherove is a prominent figure in the world of unit testing and software craftsmanship.
 
