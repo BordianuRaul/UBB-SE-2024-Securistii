@@ -1,18 +1,5 @@
 
-AdminUser
-BasicUser
-UserRepository
-UserService
-UserTemplate
-
-
-BidModel
-BidRepository
-BidService
-
-AuctionModel
-AuctionRepository
-AuctionService
+All the files that need testing: AdminUser BasicUser UserRepository UserService UserTemplate BidModel BidRepository BidService AuctionModel AuctionRepository AuctionService
 
 
 TAsks :
@@ -25,33 +12,42 @@ TAsks :
 	- actually use
 
 test = write tests
+The selected testing framework is NUnit
 
-Ritchie : 
+** Ritchie
 - Write the Interfaces
 - test : UserService
 
-Tibu : 
+** Tibu
 - test : AuctionRepository
 - test : AuctionService
 
-Luci:
+** Luci
 - test: Bid Service
 - test: Bid Repo
+- test: UserRepo
 
-Roby
+** Roby
 - installed testing framework(done)
 - test: BidModel
 - test: UserTemplate
 
-Alisa
+** Alisa
 - set-up testing framework (done)
 - test AuctionUser
 
-Mihh
+** Mihh
 - project structure refactoring for interfaces usage-> decoupling the backend from the front end (done) 
 - project set-up and configuration
-- test AdminUser
-- test BasicUser
+- test: AdminUser
+- test: BasicUser
+
+* Variable/function Names refactoring 
+- Will be done after we've written all the tests and achieved 100% code coverage
+- Each one of us will rename the variables/function in the files that they've worked on.
+
+The style cop refactoring will be done after the the the tasks listed above
+
 
 
 
