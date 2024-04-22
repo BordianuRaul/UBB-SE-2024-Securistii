@@ -42,7 +42,7 @@ The selected testing framework is NUnit
 - test: AdminUser
 - test: BasicUser
 
-* Variable/function Names refactoring 
+** Variable/function Names refactoring 
 - Will be done after we've written all the tests and achieved 100% code coverage
 - Each one of us will rename the variables/function in the files that they've worked on.
 
