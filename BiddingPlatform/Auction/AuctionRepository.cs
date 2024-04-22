@@ -13,19 +13,17 @@ namespace BiddingPlatform.Auction
     {
         private string ConnectionString;
         public List<AuctionModel> listOfAuctions {  get; set; }
-        private string mihhConnectionString="Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
-        public AuctionRepository() 
+        public AuctionRepository(string connectionString) 
         {
-            //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
-            this.ConnectionString = mihhConnectionString;
+            this.ConnectionString = connectionString;
             this.listOfAuctions = new List<AuctionModel>();
             this.LoadAuctionsFromDatabase();
         }
 
-        public AuctionRepository(List<AuctionModel> listOfAuctions)
+        public AuctionRepository(List<AuctionModel> listOfAuctions, string connectionString)
         {
             //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
-            this.ConnectionString = mihhConnectionString;
+            this.ConnectionString = connectionString;
             this.listOfAuctions = listOfAuctions;
         }
 
@@ -156,7 +154,7 @@ namespace BiddingPlatform.Auction
             string query = @"INSERT INTO Auction (DateOfStart, AuctionDescription, AuctionName, CurrentMaxSum) 
                      VALUES (@DateOfStart, @AuctionDescription, @AuctionName, @CurrentMaxSum)";
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@DateOfStart", date);
