@@ -10,20 +10,19 @@ namespace BiddingPlatform.Bid
 {
     public class BidRepository
     {
-        private string connectionString;
+        private string ConnectionString;
         public List<BidModel> Bids { get; set; }
 
-        private string mihhConnectionString="Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
-        public BidRepository() 
+        public BidRepository(string connectionString)
         {
-            this.connectionString = mihhConnectionString;
+            this.ConnectionString = connectionString;
             this.Bids = new List<BidModel>();
             this.LoadBidsFromDatabase();
         }
 
-        public BidRepository(List<BidModel> bids)
+        public BidRepository(List<BidModel> bids, string connectionString)
         {
-            this.connectionString = mihhConnectionString;
+            this.ConnectionString = connectionString;
             Bids = bids;
         }
 
@@ -31,7 +30,7 @@ namespace BiddingPlatform.Bid
         {
             string query = "SELECT * FROM Bid";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
@@ -56,7 +55,7 @@ namespace BiddingPlatform.Bid
         {
             string query = $"SELECT * FROM Users WHERE UserID = {userID}";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
