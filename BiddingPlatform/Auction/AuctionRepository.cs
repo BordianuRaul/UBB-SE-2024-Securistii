@@ -13,16 +13,19 @@ namespace BiddingPlatform.Auction
     {
         private string ConnectionString;
         public List<AuctionModel> listOfAuctions {  get; set; }
+        private string mihhConnectionString="Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
         public AuctionRepository() 
         {
-            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = mihhConnectionString;
             this.listOfAuctions = new List<AuctionModel>();
             this.LoadAuctionsFromDatabase();
         }
 
         public AuctionRepository(List<AuctionModel> listOfAuctions)
         {
-            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = mihhConnectionString;
             this.listOfAuctions = listOfAuctions;
         }
 

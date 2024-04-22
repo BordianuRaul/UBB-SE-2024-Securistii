@@ -25,14 +25,15 @@ namespace BiddingPlatform.GUI.AdminSide
     /// </summary>
     public partial class AdminLiveAuctionPage : Page
     {
-        public AuctionRepository auctionrepository;
         public AuctionService AuctionService;
+        public BidService bidService;
         public List<AuctionModel> auctions;
-        public AdminLiveAuctionPage()
+
+        public AdminLiveAuctionPage(AuctionService auctionService, BidService bidService)
         {
             InitializeComponent();
-            this.auctionrepository = new AuctionRepository();
-            this.AuctionService = new AuctionService(auctionrepository);
+            this.AuctionService = auctionService;
+            this.bidService = bidService;
             List<AuctionModel> auctions = this.AuctionService.getAuctions();
 
             name1.Text = auctions[0].name;
@@ -52,13 +53,13 @@ namespace BiddingPlatform.GUI.AdminSide
 
         private void EnterAuction(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(1);
+            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(1, this.AuctionService, this.bidService);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 
         private void AddAuction(object sender, RoutedEventArgs e)
         {
-            AddAuctionPage AddAuctionPage = new AddAuctionPage();
+            AddAuctionPage AddAuctionPage = new AddAuctionPage(this.AuctionService);
             NavigationService?.Navigate(AddAuctionPage);
         }
     }

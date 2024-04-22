@@ -18,9 +18,15 @@ namespace BiddingPlatform
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+
+        const string DATABASE_CONNECTION_STRING = "";
+
+        Page liveAuctionPage, adminLiveAuctionPage;
+        public MainWindow(Page liveAuctionPage, Page adminLiveAuctionPage)
         {
             InitializeComponent();
+            this.liveAuctionPage = liveAuctionPage;
+            this.adminLiveAuctionPage = adminLiveAuctionPage;
         }
 
         private void UserClick(object sender, RoutedEventArgs e)
@@ -28,7 +34,7 @@ namespace BiddingPlatform
             //LiveAuctionPage page = new LiveAuctionPage();
             //this.Content = page;
             MainFrame.Content = null;
-            MainFrame.NavigationService.Navigate(new LiveAuctionPage());
+            MainFrame.NavigationService.Navigate(liveAuctionPage);
             (sender as Button).Visibility = Visibility.Collapsed;
             AdminButton.Visibility = Visibility.Collapsed;
         }
@@ -36,7 +42,7 @@ namespace BiddingPlatform
         private void AdminClick(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = null;
-            MainFrame.NavigationService.Navigate(new AdminLiveAuctionPage());
+            MainFrame.NavigationService.Navigate(adminLiveAuctionPage);
             (sender as Button).Visibility = Visibility.Collapsed;
             UserButton.Visibility = Visibility.Collapsed;
         }

@@ -11,6 +11,7 @@ namespace BiddingPlatform.User
     {
         private string ConnectionString { get; set; }
         private List<UserTemplate> listOfUsers { get; set; }
+        private string mihhConnectionString="Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
         public UserRepository() { 
             this.listOfUsers = new List<UserTemplate>();
             this.LoadUsersFromDataBase();
@@ -19,7 +20,7 @@ namespace BiddingPlatform.User
 
         public UserRepository(List<UserTemplate> _listOfUsers)
         {
-            this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.ConnectionString = mihhConnectionString;
             this.listOfUsers = _listOfUsers;
         }
         private void LoadUsersFromDataBase()

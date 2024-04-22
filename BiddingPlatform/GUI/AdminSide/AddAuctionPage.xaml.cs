@@ -24,22 +24,19 @@ namespace BiddingPlatform.GUI.AdminSide
     /// </summary>
     public partial class AddAuctionPage : Page
     {
-        public AuctionRepository auctionrepository;
         public AuctionService AuctionService;
+        public BidService BidService;
         public List<AuctionModel> auctions;
-        public AddAuctionPage()
+        public AddAuctionPage(AuctionService auctionService)
         {
             InitializeComponent();
-            this.auctionrepository = new AuctionRepository();
-            this.AuctionService = new AuctionService(auctionrepository);
+            this.AuctionService = auctionService;
             List<AuctionModel> auctions = this.AuctionService.getAuctions();
-
-
         }
 
         private void CancelAddAuction(object sender, RoutedEventArgs e)
         {
-            AdminLiveAuctionPage AdminLiveAuctionPage = new AdminLiveAuctionPage();
+            AdminLiveAuctionPage AdminLiveAuctionPage = new AdminLiveAuctionPage(this.AuctionService, this.BidService);
             NavigationService?.Navigate(AdminLiveAuctionPage);
         }
 

@@ -24,15 +24,15 @@ namespace BiddingPlatform.GUI
     public partial class LiveAuctionPage : Page
     {
         
-        public AuctionRepository auctionrepository;
         public AuctionService AuctionService;
+        public BidService BidService;
         public List<AuctionModel> auctions;
 
-        public LiveAuctionPage()
+        public LiveAuctionPage(AuctionService auctionService, BidService bidService)
         {
             InitializeComponent();
-            this.auctionrepository = new AuctionRepository();
-            this.AuctionService = new AuctionService(auctionrepository);
+            this.AuctionService= auctionService;
+            this.BidService = bidService;
             List<AuctionModel> auctions = this.AuctionService.getAuctions();
             
             name1.Text= auctions[0].name;
@@ -50,24 +50,28 @@ namespace BiddingPlatform.GUI
             //time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
         }
 
+
+        private void NavigateToDetailsPage(int index)
+        {
+            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(index, AuctionService, BidService);
+            NavigationService?.Navigate(auctionDetailsPage);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Button button = sender as Button;
             //int index = Convert.ToInt32(button.Tag); 
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(0);
-            NavigationService?.Navigate(auctionDetailsPage);
+            this.NavigateToDetailsPage(0);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(1);
-            NavigationService?.Navigate(auctionDetailsPage);
+            this.NavigateToDetailsPage(1);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(2);
-            NavigationService?.Navigate(auctionDetailsPage);
+            this.NavigateToDetailsPage(2);
         }
     }
 }

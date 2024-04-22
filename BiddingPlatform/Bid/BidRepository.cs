@@ -13,16 +13,17 @@ namespace BiddingPlatform.Bid
         private string connectionString;
         public List<BidModel> Bids { get; set; }
 
+        private string mihhConnectionString="Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
         public BidRepository() 
         {
-            this.connectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.connectionString = mihhConnectionString;
             this.Bids = new List<BidModel>();
             this.LoadBidsFromDatabase();
         }
 
         public BidRepository(List<BidModel> bids)
         {
-            this.connectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
+            this.connectionString = mihhConnectionString;
             Bids = bids;
         }
 

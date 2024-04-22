@@ -24,20 +24,18 @@ namespace BiddingPlatform.GUI
     public partial class AuctionDetailsPage : Page
     {
         public int auctionIndex;
-        public AuctionRepository auctionrepository;
+
         public AuctionService AuctionService;
-        public BidRepository BidRepository;
         public BidService BidService;
+
         public List<BidModel> bidModels;
         public List<AuctionModel> auctions;
-        public AuctionDetailsPage(int index)
+        public AuctionDetailsPage(int index, AuctionService auctionService, BidService bidService)
         {
             InitializeComponent();
             auctionIndex = index;
-            this.auctionrepository = new AuctionRepository();
-            this.BidRepository = new BidRepository();
-            this.BidService = new BidService(BidRepository);
-            this.AuctionService = new AuctionService(auctionrepository);
+            this.BidService = bidService;
+            this.AuctionService = auctionService;
             //List<BidModel> bidModels = this.BidService.getBids();
             List<AuctionModel> auctions = this.AuctionService.getAuctions();
             
@@ -57,13 +55,13 @@ namespace BiddingPlatform.GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            LiveAuctionPage LiveAuctionPage = new LiveAuctionPage();
+            LiveAuctionPage LiveAuctionPage = new LiveAuctionPage(this.AuctionService, this.BidService);
             NavigationService?.Navigate(LiveAuctionPage);
         }
 
         private void JoinAuction(object sender, RoutedEventArgs e)
         {
-            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage(auctionIndex);
+            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage(auctionIndex, this.AuctionService, this.BidService);
             NavigationService?.Navigate(EnterAuctionPage);
         }
     }

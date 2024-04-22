@@ -1,3 +1,6 @@
+create database BidingSystem
+
+
 USE BidingSystem
 
 CREATE TABLE Users (
@@ -30,4 +33,5 @@ CREATE TABLE Auction(
 SELECT * FROM Users
 SELECT * FROM Bid
 SELECT * FROM Auction
+
 
