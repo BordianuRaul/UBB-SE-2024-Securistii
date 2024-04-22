@@ -17,8 +17,11 @@ namespace BiddingPlatform.User
 
         private string generateNickname()
         {
+            const int RANDOM_RANGE_MINIMUM_VALUE = 100000;
+            const int RANDOM_RANGE_MAXIMUM_VALUE = 1000000;
             Random rand = new Random();
-            return "MaliciousUser" + rand.Next(100000, 1000000).ToString();
+            string randomId = rand.Next(RANDOM_RANGE_MINIMUM_VALUE, RANDOM_RANGE_MAXIMUM_VALUE).ToString();
+            return "MaliciousUser" + randomId;
         }
 
         public void addBasicUser(int id, string username)

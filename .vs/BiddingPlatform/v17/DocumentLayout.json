@@ -3,6 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1822840-7F08-4A57-8573-45400605F13A}|UnitTestingMacrow\\UnitTestingMacrow.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\unittestingmacrow\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1822840-7F08-4A57-8573-45400605F13A}|UnitTestingMacrow\\UnitTestingMacrow.csproj|solutionrelative:unittestingmacrow\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\gui\\userside\\liveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\liveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\adminside\\adminliveauctionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\liveauctionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +78,6 @@
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\gui\\userside\\auctiondetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\bid\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\bid\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,20 +94,12 @@
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\usertemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\user\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\auction\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\auction\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|solutionrelative:biddingplatform\\auction\\auctionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DFC8511-BB5E-446F-A897-7B386718C0BF}|BiddingPlatform\\BiddingPlatform.csproj|c:\\users\\mihh\\gits\\ubb-se-2024-securistii--macrow\\biddingplatform\\user\\basicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,37 +121,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml.cs",
-              "RelativeToolTip": "BiddingPlatform\\App.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:05:28.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LiveAuctionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
-              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAswD0AAAAuAAAA",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\UnitTestingMacrow\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTestingMacrow\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\UnitTestingMacrow\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTestingMacrow\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:50:42.774Z",
+              "WhenOpened": "2024-04-22T12:47:33.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "AuctionDetailsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
@@ -152,12 +146,11 @@
               "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAowDMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:55:25.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T11:55:25.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "AdminLiveAuctionPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
@@ -165,166 +158,24 @@
               "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAAAQwD0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T13:04:57.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T13:04:57.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddAuctionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
-              "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAACYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T09:40:24.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnterAuctionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
-              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:50:03.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml",
-              "RelativeDocumentMoniker": "BiddingPlatform\\App.xaml",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml",
-              "RelativeToolTip": "BiddingPlatform\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-22T10:05:39.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "BiddingPlatform\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml",
-              "RelativeToolTip": "BiddingPlatform\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-22T10:06:20.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml.cs",
-              "RelativeToolTip": "BiddingPlatform\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:06:08.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\AssemblyInfo.cs",
-              "RelativeToolTip": "BiddingPlatform\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:04:32.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserRepository.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserRepository.cs",
-              "RelativeToolTip": "BiddingPlatform\\User\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:54:04.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BidModel.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidModel.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidModel.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidModel.cs",
-              "RelativeToolTip": "BiddingPlatform\\Bid\\BidModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:38:46.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserService.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserService.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserService.cs",
-              "RelativeToolTip": "BiddingPlatform\\User\\UserService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABQAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:02:14.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BidRepository.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidRepository.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidRepository.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidRepository.cs",
-              "RelativeToolTip": "BiddingPlatform\\Bid\\BidRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:49:20.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BidService.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidService.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidService.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidService.cs",
-              "RelativeToolTip": "BiddingPlatform\\Bid\\BidService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T11:58:24.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserTemplate.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserTemplate.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserTemplate.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserTemplate.cs",
-              "RelativeToolTip": "BiddingPlatform\\User\\UserTemplate.cs",
+              "DocumentIndex": 6,
+              "Title": "AuctionModel.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionModel.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionModel.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionModel.cs",
+              "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:11:11.476Z",
+              "WhenOpened": "2024-04-09T10:52:02.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
               "Title": "AdminUser.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\AdminUser.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\User\\AdminUser.cs",
@@ -337,7 +188,191 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserRepository.cs",
+              "RelativeToolTip": "BiddingPlatform\\User\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:54:04.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserService.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserService.cs",
+              "RelativeToolTip": "BiddingPlatform\\User\\UserService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:02:14.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\App.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:05:28.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LiveAuctionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswD0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:50:42.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAADkHAAAAAAAAAAAcwEoHAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-04-22T12:48:49.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddAuctionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:40:24.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnterAuctionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:50:03.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\App.xaml",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\App.xaml",
+              "RelativeToolTip": "BiddingPlatform\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T10:05:39.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "BiddingPlatform\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml",
+              "RelativeToolTip": "BiddingPlatform\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T10:06:20.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BiddingPlatform\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:06:08.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\AssemblyInfo.cs",
+              "RelativeToolTip": "BiddingPlatform\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:04:32.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BidModel.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidModel.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidModel.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidModel.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:38:46.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BidRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidRepository.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidRepository.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidRepository.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:49:20.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BidService.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidService.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\Bid\\BidService.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Bid\\BidService.cs",
+              "RelativeToolTip": "BiddingPlatform\\Bid\\BidService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T11:58:24.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserTemplate.cs",
+              "RelativeDocumentMoniker": "BiddingPlatform\\User\\UserTemplate.cs",
+              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\UserTemplate.cs",
+              "RelativeToolTip": "BiddingPlatform\\User\\UserTemplate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:11:11.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "BasicUser.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\User\\BasicUser.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\User\\BasicUser.cs",
@@ -345,12 +380,11 @@
               "RelativeToolTip": "BiddingPlatform\\User\\BasicUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:03:58.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T10:03:58.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AuctionRepository.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionRepository.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionRepository.cs",
@@ -358,25 +392,11 @@
               "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionRepository.cs",
               "ViewState": "AQIAAJgAAAAAAAAAAAAAAJkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:38:51.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T10:38:51.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AuctionModel.cs",
-              "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionModel.cs",
-              "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionModel.cs",
-              "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionModel.cs",
-              "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionModel.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA5wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:52:02.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "AuctionService.cs",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\Auction\\AuctionService.cs",
               "RelativeDocumentMoniker": "BiddingPlatform\\Auction\\AuctionService.cs",
@@ -384,32 +404,29 @@
               "RelativeToolTip": "BiddingPlatform\\Auction\\AuctionService.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:57:39.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T10:57:39.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "AdminLiveAuctionPage.xaml",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
               "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
               "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AdminLiveAuctionPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-09T11:30:59.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T11:30:59.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "AddAuctionPage.xaml",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
               "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
               "RelativeToolTip": "BiddingPlatform\\GUI\\AdminSide\\AddAuctionPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-09T11:31:05.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T11:31:05.968Z"
             }
           ]
         }
@@ -434,31 +451,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "EnterAuctionPage.xaml",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
               "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
               "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\EnterAuctionPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-09T10:50:37.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T10:50:37.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "AuctionDetailsPage.xaml",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
               "ToolTip": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
               "RelativeToolTip": "BiddingPlatform\\GUI\\UserSide\\AuctionDetailsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-09T11:31:31.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T11:31:31.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "LiveAuctionPage.xaml",
               "DocumentMoniker": "C:\\Users\\MiHH\\Gits\\UBB-SE-2024-Securistii--Macrow\\BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
               "RelativeDocumentMoniker": "BiddingPlatform\\GUI\\UserSide\\LiveAuctionPage.xaml",
