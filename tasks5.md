@@ -71,6 +71,7 @@ One Assert per Test: Each unit test should ideally contain only one assertion. T
 **Test Data Management**: Clear management of test data, including setup and teardown procedures, to ensure tests are repeatable and consistent.
 
 **Test First Approach (TDD)**: While not exclusive to Osherove-style testing, the practice of writing tests before writing the actual code is often advocated. This ensures that the code is written with testability in mind from the beginning.
+
 (Courtesy of Chat Generative Pre-Trained Transformer)
 
 - Don't forget that you have to make your own database for the project to compile and run; you can just copy-paste the SQL code from the *.sql files for it.
