@@ -9,17 +9,17 @@ using BiddingPlatform.User;
 
 namespace BiddingPlatform.Auction
 {
-    public class AuctionModel
+    public class AuctionModel : IAuctionModel
     {
         public int auctionId {  get; set; }
         public DateTime startingDate { get; set; }
         public string description {  get; set; }
         public string name { get; set; }
         public float currentMaxSum {  get; set; }
-        public List<BasicUser> listOfUsers { get; set; }
-        public List<BidModel> listOfBids { get; set; }
+        private List<BasicUser> listOfUsers { get; set; }
+        public List<IBidModel> listOfBids { get; set; }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<BidModel> listOfBids)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<IBidModel> listOfBids)
         {
             this.auctionId = _id;
             this.startingDate = startingDate;
@@ -38,7 +38,7 @@ namespace BiddingPlatform.Auction
             this.name = name;
             this.currentMaxSum = currentMaxSum;
             this.listOfUsers = new List<BasicUser>();
-            this.listOfBids = new List<BidModel>();
+            this.listOfBids = new List<IBidModel>();
         }
 
         public void addUserToAuction(BasicUser user)
@@ -46,7 +46,7 @@ namespace BiddingPlatform.Auction
             this.listOfUsers.Add(user);
         }
 
-        public void addBidToAuction(BidModel bid)
+        public void addBidToAuction(IBidModel bid)
         {
             this.listOfBids.Add(bid);
         }

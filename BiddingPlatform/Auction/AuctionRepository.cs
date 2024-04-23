@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.Auction
 {
-    public class AuctionRepository
+    public class AuctionRepository : IAuctionRepository
     {
         private string ConnectionString;
-        public List<AuctionModel> listOfAuctions {  get; set; }
+        public List<IAuctionModel> listOfAuctions {  get; set; }
         public AuctionRepository(string connectionString) 
         {
             this.ConnectionString = connectionString;
-            this.listOfAuctions = new List<AuctionModel>();
+            this.listOfAuctions = new List<IAuctionModel>();
             this.LoadAuctionsFromDatabase();
         }
 
-        public AuctionRepository(List<AuctionModel> listOfAuctions, string connectionString)
+        public AuctionRepository(List<IAuctionModel> listOfAuctions, string connectionString)
         {
             //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.ConnectionString = connectionString;
@@ -48,10 +48,10 @@ namespace BiddingPlatform.Auction
 
 
                     List<BasicUser> users = LoadUserFromDatabase(auctionId);
-                    List<BidModel> bids = LoadBidFromDatabase(auctionId);
+                    List<IBidModel> bids = LoadBidFromDatabase(auctionId);
 
 
-                    AuctionModel auction = new AuctionModel(auctionId, dateOfStart, auctionDescription, auctionName, currentMaxSum, users, bids);
+                    IAuctionModel auction = new AuctionModel(auctionId, dateOfStart, auctionDescription, auctionName, currentMaxSum, users, bids);
                     listOfAuctions.Add(auction);
                 }
             }
@@ -85,9 +85,9 @@ namespace BiddingPlatform.Auction
         }
 
 
-        private List<BidModel> LoadBidFromDatabase(int auctionID)
+        private List<IBidModel> LoadBidFromDatabase(int auctionID)
         {
-            List<BidModel> bids = new List<BidModel>();
+            List<IBidModel> bids = new List<IBidModel>();
 
             using (SqlConnection connection = new SqlConnection(this.ConnectionString))
             {
@@ -143,7 +143,7 @@ namespace BiddingPlatform.Auction
 
         }
 
-        public void addAuctionToRepo(AuctionModel auction)
+        public void addAuctionToRepo(IAuctionModel auction)
         {
             listOfAuctions.Add(auction);
             
@@ -168,12 +168,12 @@ namespace BiddingPlatform.Auction
         }
 
 
-        public void removeAuctionFromRepo(AuctionModel auction)
+        public void removeAuctionFromRepo(IAuctionModel auction)
         {
             listOfAuctions.Remove(auction);
         }
 
-        public void updateAuctionIntoRepo(AuctionModel oldauction, AuctionModel newauction)
+        public void updateAuctionIntoRepo(IAuctionModel oldauction, IAuctionModel newauction)
         {
             int oldauctionIndex = this.listOfAuctions.FindIndex(auction => auction == oldauction);
             if (oldauctionIndex != -1)

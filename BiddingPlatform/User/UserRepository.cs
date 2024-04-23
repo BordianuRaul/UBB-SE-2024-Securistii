@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.User
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private string ConnectionString { get; set; }
-        private List<UserTemplate> listOfUsers { get; set; }
+        private List<IUserTemplate> listOfUsers { get; set; }
         public UserRepository(string connectionString)
         {
             this.ConnectionString = connectionString;
-            this.listOfUsers = new List<UserTemplate>();
+            this.listOfUsers = new List<IUserTemplate>();
             this.LoadUsersFromDataBase();
         }
 
-        public UserRepository(List<UserTemplate> _listOfUsers, string connectionString)
+        public UserRepository(List<IUserTemplate> _listOfUsers, string connectionString)
         {
             this.ConnectionString = connectionString;
             this.listOfUsers = _listOfUsers;
@@ -39,7 +39,7 @@ namespace BiddingPlatform.User
                     string nickname = reader["Nickname"].ToString();
                     string userType = reader["UserType"].ToString();
 
-                    UserTemplate user;
+                    IUserTemplate user;
                     if (userType == "Basic")
                     {
                         user = new BasicUser(userId, username, nickname);
@@ -54,19 +54,19 @@ namespace BiddingPlatform.User
             }
         }
 
-        public void addUserToRepo(UserTemplate User) 
+        public void addUserToRepo(IUserTemplate User) 
         {
             // it should be safe to delete this line
             // this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.listOfUsers.Add(User);
         }
 
-        public void removeUserFromRepo(UserTemplate User)
+        public void removeUserFromRepo(IUserTemplate User)
         {
             this.listOfUsers.Remove(User);
         }
 
-        public void updateUserIntoRepo(UserTemplate olduser, UserTemplate newuser)
+        public void updateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser)
         {
             int olduserIndex = this.listOfUsers.FindIndex(user => user == olduser);
             if (olduserIndex != -1)
@@ -74,7 +74,7 @@ namespace BiddingPlatform.User
                 this.listOfUsers[olduserIndex] = newuser;
             }
         }
-        public List<UserTemplate> GetListOfUsers()
+        public List<IUserTemplate> GetListOfUsers()
         {
             return this.listOfUsers;
         }

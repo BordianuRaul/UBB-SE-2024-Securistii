@@ -24,14 +24,14 @@ namespace BiddingPlatform.GUI.AdminSide
     /// </summary>
     public partial class AddAuctionPage : Page
     {
-        public AuctionService AuctionService;
-        public BidService BidService;
-        public List<AuctionModel> auctions;
-        public AddAuctionPage(AuctionService auctionService)
+        public IAuctionService AuctionService;
+        public IBidService BidService;
+        public List<IAuctionModel> auctions;
+        public AddAuctionPage(IAuctionService auctionService)
         {
             InitializeComponent();
             this.AuctionService = auctionService;
-            List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.getAuctions();
         }
 
         private void CancelAddAuction(object sender, RoutedEventArgs e)

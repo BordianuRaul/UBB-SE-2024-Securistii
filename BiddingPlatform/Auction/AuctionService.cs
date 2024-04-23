@@ -7,9 +7,9 @@ using System.Xml.Linq;
 
 namespace BiddingPlatform.Auction
 {
-    public class AuctionService
+    public class AuctionService : IAuctionService
     {
-        public AuctionRepository AuctionRepository { get; set; }
+        private IAuctionRepository AuctionRepository { get; set; }
 
         public AuctionService(AuctionRepository auctionRepository) 
         {
@@ -18,25 +18,25 @@ namespace BiddingPlatform.Auction
 
         public void addAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
         {
-            AuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
+            IAuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
             this.AuctionRepository.addAuctionToRepo(auction);
         }
 
         public void removeAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
         {
-            AuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
+            IAuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
             this.AuctionRepository.removeAuctionFromRepo(auction);
         }
 
-        public List<AuctionModel> getAuctions()
+        public List<IAuctionModel> getAuctions()
         {
             return this.AuctionRepository.listOfAuctions;
         }
 
         public void updateAuction(int id, DateTime oldstartingDate, string olddescription, string oldname, float oldcurrentMaxSum, DateTime newstartingDate, string newdescription, string newname, float newcurrentMaxSum)
         {
-            AuctionModel oldauction = new AuctionModel(id, oldstartingDate, olddescription, oldname, oldcurrentMaxSum);
-            AuctionModel newauction = new AuctionModel(id, newstartingDate, newdescription, newname, newcurrentMaxSum);
+            IAuctionModel oldauction = new AuctionModel(id, oldstartingDate, olddescription, oldname, oldcurrentMaxSum);
+            IAuctionModel newauction = new AuctionModel(id, newstartingDate, newdescription, newname, newcurrentMaxSum);
             this.AuctionRepository.updateAuctionIntoRepo(oldauction, newauction);
         }
 

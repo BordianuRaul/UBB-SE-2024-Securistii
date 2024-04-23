@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.Bid
 {
-    public class BidRepository
+    public class BidRepository : IBidRepository
     {
         private string ConnectionString;
-        public List<BidModel> Bids { get; set; }
+        public List<IBidModel> Bids { get; set; }
 
         public BidRepository(string connectionString)
         {
             this.ConnectionString = connectionString;
-            this.Bids = new List<BidModel>();
+            this.Bids = new List<IBidModel>();
             this.LoadBidsFromDatabase();
         }
 
-        public BidRepository(List<BidModel> bids, string connectionString)
+        public BidRepository(List<IBidModel> bids, string connectionString)
         {
             this.ConnectionString = connectionString;
             Bids = bids;
@@ -81,22 +81,22 @@ namespace BiddingPlatform.Bid
 
         }
 
-        public void addBidToRepo(BidModel bid)
+        public void addBidToRepo(IBidModel bid)
         {
             this.Bids.Add(bid);
         }
 
-        public List<BidModel> getBids()
+        public List<IBidModel> getBids()
         {
             return this.Bids;
         }
 
-        public void deleteBidFromRepo(BidModel bid) 
+        public void deleteBidFromRepo(IBidModel bid)
         {
             this.Bids.Remove(bid);
         }
 
-        public void updateBidIntoRepo(BidModel oldbid, BidModel newbid)
+        public void updateBidIntoRepo(IBidModel oldbid, IBidModel newbid)
         {
             int oldbidIndex = this.Bids.FindIndex(bid => bid == oldbid);
             if (oldbidIndex != -1)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.User
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private UserRepository UserRepository { get; set; }
 
@@ -26,30 +26,30 @@ namespace BiddingPlatform.User
 
         public void addBasicUser(int id, string username)
         {
-            BasicUser toAdd = new BasicUser(id, username, generateNickname());
+            IUserTemplate toAdd = new BasicUser(id, username, generateNickname());
             this.UserRepository.addUserToRepo(toAdd);
         }
 
         public void addAdminUser(int id, string username)
         {
-            AdminUser toAdd = new AdminUser(id, username);
+            IUserTemplate toAdd = new AdminUser(id, username);
             this.UserRepository.addUserToRepo(toAdd);
         }
 
         public void removeUser(int id, string username)
         {
-            UserTemplate toremove = new UserTemplate(id, username);
+            IUserTemplate toremove = new UserTemplate(id, username);
             this.UserRepository.removeUserFromRepo(toremove);
         }
 
         public void updateUser(int id, string oldname, string newname)
         {
-            UserTemplate olduser = new UserTemplate(id, oldname);
-            UserTemplate newuser = new UserTemplate(id, newname);
+            IUserTemplate olduser = new UserTemplate(id, oldname);
+            IUserTemplate newuser = new UserTemplate(id, newname);
             this.UserRepository.updateUserIntoRepo(olduser, newuser);
         }
 
-        public List<UserTemplate> getListOfUsers()
+        public List<IUserTemplate> getListOfUsers()
         {
             return this.UserRepository.GetListOfUsers();
         }
