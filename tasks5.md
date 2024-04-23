@@ -56,7 +56,8 @@ Osherove-style unit tests, named after Roy Osherove, are a convention for writin
 Here are some key principles and practices often associated with Osherove-style unit tests:
 
 **Descriptive Test Names**: Test names should clearly describe what behavior or scenario is being tested. A reader should understand the purpose of the test just by looking at its name.
-One Assert per Test: Each unit test should ideally contain only one assertion. This makes the test focused on a single aspect of the unit under test and makes it easier to pinpoint failures.
+
+**One Assert per Test**: Each unit test should ideally contain only one assertion. This makes the test focused on a single aspect of the unit under test and makes it easier to pinpoint failures.
 
 **Arrange-Act-Assert Structure (AAA)**: Tests are typically structured into three sections: Arrange (set up the test environment), Act (invoke the method or behavior being tested), and Assert (verify the expected outcome).
 
