@@ -1,3 +1,5 @@
+using BiddingPlatform;
+
 namespace NUnitMacrow
 {
     public class Tests

@@ -19,9 +19,10 @@ namespace BiddingPlatform
         {
             base.OnStartup(e);
 
-            var auctionRepository = new AuctionRepository();
+            string dbConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=MangaDB;Integrated Security=True";
+            var auctionRepository = new AuctionRepository(dbConnectionString);
             var auctionService = new AuctionService(auctionRepository);
-            var bidRepository = new BidRepository();
+            var bidRepository = new BidRepository(dbConnectionString);
             var bidService = new BidService(bidRepository);
             Page liveAuctionPage = new LiveAuctionPage(auctionService, bidService);
             Page adminLiveAuctionPage = new AdminLiveAuctionPage(auctionService,bidService);
