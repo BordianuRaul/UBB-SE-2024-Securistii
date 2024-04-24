@@ -31,7 +31,7 @@ namespace BiddingPlatform.GUI.AdminSide
         {
             InitializeComponent();
             this.AuctionService = auctionService;
-            auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.GetAuctions();
         }
 
         private void CancelAddAuction(object sender, RoutedEventArgs e)
@@ -63,7 +63,7 @@ namespace BiddingPlatform.GUI.AdminSide
                 MessageBox.Show("Please enter a valid number");
                 return;
             }
-            this.AuctionService.addBid(name, description, deadlineDate, suminput);
+            this.AuctionService.AddBid(name, description, deadlineDate, suminput);
         }
     }
 }

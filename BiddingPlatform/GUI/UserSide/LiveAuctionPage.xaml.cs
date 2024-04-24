@@ -33,7 +33,7 @@ namespace BiddingPlatform.GUI
             InitializeComponent();
             this.AuctionService= auctionService;
             this.BidService = bidService;
-            auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.GetAuctions();
             
             name1.Text= auctions[0].name;
             name2.Text = auctions[1].name;
