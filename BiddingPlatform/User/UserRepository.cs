@@ -10,7 +10,7 @@ namespace BiddingPlatform.User
     public class UserRepository : IUserRepository
     {
         private string ConnectionString { get; set; }
-        private List<IUserTemplate> listOfUsers { get; set; }
+        public List<IUserTemplate> listOfUsers { get; set; }
         public UserRepository(string connectionString)
         {
             this.ConnectionString = connectionString;
