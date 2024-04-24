@@ -30,27 +30,24 @@ namespace BiddingPlatform.GUI
 
         public List<IBidModel> bidModels;
         public List<IAuctionModel> auctions;
-        public AuctionDetailsPage(int index, IAuctionService auctionService, IBidService bidService)
+
+        public AuctionDetailsPage(int currentAuctionIndex, IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
-            auctionIndex = index;
+            auctionIndex = currentAuctionIndex;
             this.BidService = bidService;
             this.AuctionService = auctionService;
-            //List<BidModel> bidModels = this.BidService.getBids();
             auctions = this.AuctionService.getAuctions();
             
 
-            AuctionNameBid.Text= auctions[index].name;
-            CurrentBid.Text = auctions[index].currentMaxSum.ToString();
-            TimeLeft.Text= (DateTime.Now - auctions[index].startingDate).Hours.ToString();
+            AuctionNameBid.Text = auctions[currentAuctionIndex].Name;
+            CurrentBid.Text = auctions[currentAuctionIndex].CurrentMaxSum.ToString();
+            TimeLeft.Text= (DateTime.Now - auctions[currentAuctionIndex].StartingDate).Hours.ToString();
 
-
-            int n= auctions[index].listOfBids.Count;
-            for(int i=0; i<n; i++)
+            foreach(IBidModel bid in auctions[currentAuctionIndex].ListOfBids) 
             {
-                BidHistory.Text += auctions[index].listOfBids[i].BidSum.ToString() + "\n";
+                BidHistory.Text += bid.BidSum.ToString() + "\n";
             }
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
