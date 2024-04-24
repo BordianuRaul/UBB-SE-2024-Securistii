@@ -6,90 +6,90 @@ namespace NUnitMacrow.BidTests
 {
     public class BidModelTest
     {
-        private BidModel _bidModel { get; set; }
-        private BasicUser _basicUser { get; set; }
+        private BidModel bidModel { get; set; }
+        private BasicUser basicUser { get; set; }
 
         [SetUp]
         public void Setup()
         {
-            this._basicUser = new BasicUser(1, "basicUserName1", "basicUserNickname1");
+            this.basicUser = new BasicUser(1, "basicUserName1", "basicUserNickname1");
             DateTime dateTime = new DateTime(2024, 4, 23, 20, 34, 33);  // YYYY/MM/dd HH:mm:ss
-            this._bidModel = new BidModel(2, this._basicUser, 40, dateTime);
+            this.bidModel = new BidModel(2, this.basicUser, 40, dateTime);
         }
 
         [Test]
-        public void getBidId_EqualTest()
+        public void GetBidId_EqualTest()
         {
-            int bidId = this._bidModel.bidId;
+            int bidId = this.bidModel.BidId;
 
             Assert.AreEqual(2, bidId);
         }
 
         [Test]
-        public void setBidId_EqualTest()
+        public void SetBidId_EqualTest()
         {
-            this._bidModel.bidId = 4;
+            this.bidModel.BidId = 4;
 
-            int bidId = this._bidModel.bidId;
+            int bidId = this.bidModel.BidId;
 
             Assert.AreEqual(4, bidId);
         }
 
         [Test]
-        public void getBasicUser_EqualTest()
+        public void GetBasicUser_EqualTest()
         {
-            BasicUser basicUser = this._bidModel.user;
+            BasicUser basicUser = this.bidModel.BasicUser;
 
-            Assert.AreEqual(this._basicUser, basicUser);
+            Assert.AreEqual(this.basicUser, basicUser);
         }
 
         [Test]
-        public void setBasicUser_EqualTest()
+        public void SetBasicUser_EqualTest()
         {
             BasicUser newUser = new(11, "basicUserName2", "basicUserNickname2");
-            this._bidModel.user = newUser;
+            this.bidModel.BasicUser = newUser;
 
-            BasicUser basicUser = this._bidModel.user;
+            BasicUser basicUser = this.bidModel.BasicUser;
 
             Assert.AreEqual(newUser, basicUser);
         }
 
         [Test]
-        public void getBidSum_EqualTest()
+        public void GetBidSum_EqualTest()
         {
-            float bidSum = this._bidModel.bidSum;
+            float bidSum = this.bidModel.BidSum;
 
             Assert.AreEqual(40, bidSum);
         }
 
         [Test]
-        public void setBidSum_EqualTest()
+        public void SetBidSum_EqualTest()
         {
-            this._bidModel.bidSum = 666;
+            this.bidModel.BidSum = 666;
 
-            float bidSum = this._bidModel.bidSum;
+            float bidSum = this.bidModel.BidSum;
 
             Assert.AreEqual(666, bidSum);
         }
 
         [Test]
-        public void getBidDate_EqualTest()
+        public void GetBidDate_EqualTest()
         {
-            DateTime date = this._bidModel.bidDate;
-            DateTime expectedDate = new DateTime(2024, 4, 23, 20, 34, 33);
+            DateTime dateTime = this.bidModel.BidDateTime;
+            DateTime expectedDateTime = new DateTime(2024, 4, 23, 20, 34, 33);
 
-            Assert.AreEqual(expectedDate, date);
+            Assert.AreEqual(expectedDateTime, dateTime);
         }
 
         [Test]
-        public void setBidDate_EqualTest()
+        public void SetBidDate_EqualTest()
         {
-            DateTime newDate = new DateTime(2048, 8, 16, 16, 32, 32);
-            this._bidModel.bidDate = newDate;
+            DateTime newDateTime = new DateTime(2048, 8, 16, 16, 32, 32);
+            this.bidModel.BidDateTime = newDateTime;
 
-            DateTime dateTime = this._bidModel.bidDate;
+            DateTime dateTime = this.bidModel.BidDateTime;
 
-            Assert.AreEqual(newDate, dateTime);
+            Assert.AreEqual(newDateTime, dateTime);
         }
     }
 }

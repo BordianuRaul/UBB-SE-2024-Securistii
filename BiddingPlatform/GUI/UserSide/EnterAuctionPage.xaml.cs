@@ -44,7 +44,7 @@ namespace BiddingPlatform.GUI
             int n = auctions[index].listOfBids.Count;
             for (int i = 0; i < n; i++)
             {
-                BidHistory.Text += auctions[index].listOfBids[i].bidSum.ToString() + "\n";
+                BidHistory.Text += auctions[index].listOfBids[i].BidSum.ToString() + "\n";
             }
 
         }

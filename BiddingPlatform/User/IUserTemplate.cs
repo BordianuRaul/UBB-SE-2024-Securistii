@@ -8,9 +8,9 @@ namespace BiddingPlatform.User
 {
     public interface IUserTemplate
     {
-        string getUsername();
-        void setUsername(string _username);
-        int getId();
-        void setId(int _id);
+        string GetUsername();
+        void SetUsername(string username);
+        int GetId();
+        void SetId(int id);
     }
 }

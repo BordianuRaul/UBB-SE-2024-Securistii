@@ -8,22 +8,31 @@ namespace BiddingPlatform.User
 {
     public class UserTemplate : IUserTemplate
     {
-        private int Userid { get; set; }
-        private string username { get; set; }
+        private int UserId { get; set; }
+        private string Username { get; set; }
 
-        public UserTemplate(int _id, string _username)
+        public UserTemplate(int id, string username)
         {
-            this.Userid = _id;
-            this.username = _username;
+            this.UserId = id;
+            this.Username = username;
         }
 
-        public string getUsername() { return username; }
-
-        public void setUsername(string _username) { username = _username; }
-        public int getId() { return Userid; }
-        public void setId(int _id)
+        public string GetUsername()
         {
-            Userid = _id;
+            return Username;
+        }
+
+        public void SetUsername(string username)
+        {
+            Username = username;
+        }
+        public int GetId()
+        {
+            return UserId;
+        }
+        public void SetId(int id)
+        {
+            UserId = id;
         }
     }
 }
