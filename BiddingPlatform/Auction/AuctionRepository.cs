@@ -104,7 +104,7 @@ namespace BiddingPlatform.Auction
                     float bidSum = Convert.ToSingle(reader["BidSum"]);
                     DateTime timeOfBid = Convert.ToDateTime(reader["TimeOfBid"]);
                     int userId = Convert.ToInt32(reader["UserID"]);
-                    BasicUser user = this.getUserFromDataBase(userId);
+                    BasicUser user = this.GetUserFromDataBase(userId);
                     BidModel bid = new BidModel(bidID, user, bidSum, timeOfBid);
                     bids.Add(bid);
                 }
@@ -113,7 +113,7 @@ namespace BiddingPlatform.Auction
             return bids;
         }
 
-        private BasicUser getUserFromDataBase(int userID)
+        private BasicUser GetUserFromDataBase(int userID)
         {
             string query = $"SELECT * FROM Users WHERE UserID = {userID}";
 
@@ -143,13 +143,13 @@ namespace BiddingPlatform.Auction
 
         }
 
-        public void addAuctionToRepo(IAuctionModel auction)
+        public void AddAuctionToRepo(IAuctionModel auction)
         {
             listOfAuctions.Add(auction);
             
         }
 
-        public void addToDB(string name, string description, DateTime date, float currentMaxSum)
+        public void AddToDB(string name, string description, DateTime date, float currentMaxSum)
         {
             string query = @"INSERT INTO Auction (DateOfStart, AuctionDescription, AuctionName, CurrentMaxSum) 
                      VALUES (@DateOfStart, @AuctionDescription, @AuctionName, @CurrentMaxSum)";
@@ -168,12 +168,12 @@ namespace BiddingPlatform.Auction
         }
 
 
-        public void removeAuctionFromRepo(IAuctionModel auction)
+        public void RemoveAuctionFromRepo(IAuctionModel auction)
         {
             listOfAuctions.Remove(auction);
         }
 
-        public void updateAuctionIntoRepo(IAuctionModel oldauction, IAuctionModel newauction)
+        public void UpdateAuctionIntoRepo(IAuctionModel oldauction, IAuctionModel newauction)
         {
             int oldauctionIndex = this.listOfAuctions.FindIndex(auction => auction == oldauction);
             if (oldauctionIndex != -1)
@@ -182,7 +182,7 @@ namespace BiddingPlatform.Auction
             }
         }
 
-        public float getBidMaxSum(int index)
+        public float GetBidMaxSum(int index)
         {
             return this.listOfAuctions[index].CurrentMaxSum;
         }

@@ -16,38 +16,38 @@ namespace BiddingPlatform.Auction
             this.AuctionRepository = auctionRepository;
         }
 
-        public void addAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
+        public void AddAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
         {
             IAuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
-            this.AuctionRepository.addAuctionToRepo(auction);
+            this.AuctionRepository.AddAuctionToRepo(auction);
         }
 
-        public void removeAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
+        public void RemoveAuction(int id, DateTime startingDate, string description, string name, float currentMaxSum)
         {
             IAuctionModel auction = new AuctionModel(id, startingDate, description, name, currentMaxSum);
-            this.AuctionRepository.removeAuctionFromRepo(auction);
+            this.AuctionRepository.RemoveAuctionFromRepo(auction);
         }
 
-        public List<IAuctionModel> getAuctions()
+        public List<IAuctionModel> GetAuctions()
         {
             return this.AuctionRepository.listOfAuctions;
         }
 
-        public void updateAuction(int id, DateTime oldstartingDate, string olddescription, string oldname, float oldcurrentMaxSum, DateTime newstartingDate, string newdescription, string newname, float newcurrentMaxSum)
+        public void UpdateAuction(int id, DateTime oldstartingDate, string olddescription, string oldname, float oldcurrentMaxSum, DateTime newstartingDate, string newdescription, string newname, float newcurrentMaxSum)
         {
             IAuctionModel oldauction = new AuctionModel(id, oldstartingDate, olddescription, oldname, oldcurrentMaxSum);
             IAuctionModel newauction = new AuctionModel(id, newstartingDate, newdescription, newname, newcurrentMaxSum);
-            this.AuctionRepository.updateAuctionIntoRepo(oldauction, newauction);
+            this.AuctionRepository.UpdateAuctionIntoRepo(oldauction, newauction);
         }
 
-        public float getMaxBidSum(int index)
+        public float GetMaxBidSum(int index)
         {
-            return this.AuctionRepository.getBidMaxSum(index);
+            return this.AuctionRepository.GetBidMaxSum(index);
         }
 
-        public void addBid(string name, string description, DateTime date, float currentMaxSum)
+        public void AddBid(string name, string description, DateTime date, float currentMaxSum)
         {
-            this.AuctionRepository.addToDB(name, description, date, currentMaxSum);
+            this.AuctionRepository.AddToDB(name, description, date, currentMaxSum);
         }
     }
 }
