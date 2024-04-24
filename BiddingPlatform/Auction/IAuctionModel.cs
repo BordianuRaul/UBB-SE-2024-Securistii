@@ -10,12 +10,12 @@ namespace BiddingPlatform.Auction
 {
     public interface IAuctionModel
     {
-        public List<IBidModel> listOfBids { get; set; }
-        public int auctionId { get; set; }
-        public DateTime startingDate { get; set; }
-        public string description { get; set; }
-        public string name { get; set; }
-        public float currentMaxSum { get; set; }
+        public List<IBidModel> ListOfBids { get; set; }
+        public int AuctionId { get; set; }
+        public DateTime StartingDate { get; set; }
+        public string Description { get; set; }
+        public string Name { get; set; }
+        public float CurrentMaxSum { get; set; }
 
         public void addUserToAuction(BasicUser user);
         public void addBidToAuction(IBidModel bid);
