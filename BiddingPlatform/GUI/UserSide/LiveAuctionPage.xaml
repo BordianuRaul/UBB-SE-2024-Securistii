@@ -37,8 +37,8 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Price and Time Left First shown bid -->
-                <TextBox x:Name="price1" Grid.Column="0" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-                <TextBox x:Name="time1" Grid.Column="1" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+                <TextBox x:Name="currentBidMinimumPriceTextBox1" Grid.Column="0" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+                <TextBox x:Name="timeUntilAuctionEndsTextBox1" Grid.Column="1" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
             </Grid>
 
             <Grid Grid.Row="3" Grid.Column="2">
@@ -48,8 +48,8 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Price and Time Left second shown bid -->
-                <TextBox  x:Name="price2" Grid.Column="0" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-                <TextBox  x:Name="time2" Grid.Column="1" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+                <TextBox  x:Name="currentBidMinimumPriceTextBox2" Grid.Column="0" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+                <TextBox  x:Name="timeUntilAuctionEndsTextBox2" Grid.Column="1" Width="90" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
             </Grid>
 
@@ -65,20 +65,20 @@
 
             </Grid>
             <!--  Auction Names -->
-            <TextBox x:Name="name1" Grid.Row="0" Grid.Column="1" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-            <TextBox x:Name="name2" Grid.Row="0" Grid.Column="2" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-            <TextBox x:Name="name3" Grid.Row="0" Grid.Column="3" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionNameTextBox1" Grid.Row="0" Grid.Column="1" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionNameTextBox2" Grid.Row="0" Grid.Column="2" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionNameTextBox3" Grid.Row="0" Grid.Column="3" Width="150" Height="30" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
             <!-- Auction Descriptions -->
 
-            <TextBox x:Name="description1" Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-            <TextBox x:Name="description2" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
-            <TextBox x:Name="description3" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionDescriptionTextBox1" Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionDescriptionTextBox2" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
+            <TextBox x:Name="auctionDescriptionTextBox3" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" Width="200" Height="150" IsEnabled="False" FontFamily="Agency FB"></TextBox>
 
             <!-- Last Bid Price And Time Left see above -->
 
             <!-- Prev button -->
-            <Button Grid.Column="0" Grid.Row="2" Height="60" Width="60" Content="Previous" FontFamily="Agency FB" FontSize="16">
+            <Button x:Name="previousAuctionsListButton" Grid.Column="0" Grid.Row="2" Height="60" Width="60" Content="Previous" FontFamily="Agency FB" FontSize="16">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="50"/>
@@ -86,7 +86,7 @@
                 </Button.Resources>
             </Button>
             <!-- Next button -->
-            <Button Grid.Column="4" Grid.Row="2" Height="60" Width="60" Content="Next" FontFamily="Agency FB" FontSize="18">
+            <Button x:Name="nextAuctionsListButton" Grid.Column="4" Grid.Row="2" Height="60" Width="60" Content="Next" FontFamily="Agency FB" FontSize="18">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="50"/>
@@ -96,15 +96,15 @@
 
             <!-- Enter Auction1 Button -->
 
-            <Button Grid.Column="1" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" Click="Button_Click" FontFamily="Agency FB" FontSize="22"></Button>
+            <Button x:Name="enterAuctionButton1" Grid.Column="1" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" Click="EnterAuctionButton1_Click" FontFamily="Agency FB" FontSize="22"></Button>
 
             <!-- Enter Auction2 Button -->
 
-            <Button Grid.Column="2" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" FontFamily="Agency FB" FontSize="22" Click="Button_Click_1"></Button>
+            <Button x:Name="enterAuctionButton2" Grid.Column="2" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" FontFamily="Agency FB" FontSize="22" Click="EnterAuctionButton2_Click"></Button>
 
             <!-- Enter Auction3 Button -->
 
-            <Button Grid.Column="3" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" FontFamily="Agency FB" FontSize="22" Click="Button_Click_2"></Button>
+            <Button x:Name="enterAuctionButton3" Grid.Column="3" Grid.Row="4" Width="110" Height="40" Margin="55,5,55,35" Content="Enter Auction" FontFamily="Agency FB" FontSize="22" Click="EnterAuctionButton3_Click"></Button>
 
 
         </Grid>

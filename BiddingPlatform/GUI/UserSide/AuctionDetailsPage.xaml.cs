@@ -46,8 +46,7 @@ namespace BiddingPlatform.GUI
 
             foreach(IBidModel bid in auctions[currentAuctionIndex].ListOfBids) 
             {
-                BidHistory.Text += bid.bidSum.ToString() + "\n";
-
+                BidHistory.Text += bid.BidSum.ToString() + "\n";
             }
         }
 
