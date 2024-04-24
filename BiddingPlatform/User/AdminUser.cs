@@ -9,11 +9,11 @@ namespace BiddingPlatform.User
     public class AdminUser : UserTemplate
     {
         private string username { get; set; }
-        private int Userid { get; set; }
-        public AdminUser(int _id, string _username) : base(_id, _username)
+        private int UserID { get; set; }
+        public AdminUser(int giveUserID, string givenUsername) : base(giveUserID, givenUsername)
         {
-            this.username = _username;
-            this.Userid = _id;
+            this.username = givenUsername;
+            this.UserID = giveUserID;
         }
     }
 }

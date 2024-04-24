@@ -37,7 +37,7 @@ namespace NUnitMacrow.BidTests
 
         public void updateBidIntoRepo(IBidModel oldbid, IBidModel newbid)
         {
-            int index = _bids.FindIndex(bid => bid.bidId == oldbid.bidId);
+            int index = _bids.FindIndex(bid => bid.BidId == oldbid.BidId);
             if (index != -1)
             {
                 _bids[index] = newbid;
@@ -69,10 +69,10 @@ namespace NUnitMacrow.BidTests
             // Assert
             List<IBidModel> bids = mockRepository.getBids();
             Assert.That(bids.Count, Is.EqualTo(1));
-            Assert.That(bids[0].bidId, Is.EqualTo(bidId));
-            Assert.That(bids[0].user, Is.EqualTo(user));
-            Assert.That(bids[0].bidSum, Is.EqualTo(bidSum));
-            Assert.That(bids[0].bidDate, Is.EqualTo(bidDate));
+            Assert.That(bids[0].BidId, Is.EqualTo(bidId));
+            Assert.That(bids[0].BasicUser, Is.EqualTo(user));
+            Assert.That(bids[0].BidSum, Is.EqualTo(bidSum));
+            Assert.That(bids[0].BidDateTime, Is.EqualTo(bidDate));
         }
         
         [Test]
@@ -122,10 +122,10 @@ namespace NUnitMacrow.BidTests
             // Assert
             List<IBidModel> bids = mockRepository.getBids();
             Assert.That(bids.Count, Is.EqualTo(1));
-            Assert.That(bids[0].bidId, Is.EqualTo(bidId));
-            Assert.That(bids[0].user, Is.EqualTo(newUser));
-            Assert.That(bids[0].bidSum, Is.EqualTo(newBidSum));
-            Assert.That(bids[0].bidDate, Is.EqualTo(newBidDate));
+            Assert.That(bids[0].BidId, Is.EqualTo(bidId));
+            Assert.That(bids[0].BasicUser, Is.EqualTo(newUser));
+            Assert.That(bids[0].BidSum, Is.EqualTo(newBidSum));
+            Assert.That(bids[0].BidDateTime, Is.EqualTo(newBidDate));
         }
 
         [Test]
@@ -155,14 +155,14 @@ namespace NUnitMacrow.BidTests
 
             // Assert
             Assert.That(bids.Count, Is.EqualTo(2));
-            Assert.That(bids[0].bidId, Is.EqualTo(bidId1));
-            Assert.That(bids[0].user, Is.EqualTo(user1));
-            Assert.That(bids[0].bidSum, Is.EqualTo(bidSum1));
-            Assert.That(bids[0].bidDate, Is.EqualTo(bidDate1));
-            Assert.That(bids[1].bidId, Is.EqualTo(bidId2));
-            Assert.That(bids[1].user, Is.EqualTo(user2));
-            Assert.That(bids[1].bidSum, Is.EqualTo(bidSum2));
-            Assert.That(bids[1].bidDate, Is.EqualTo(bidDate2));
+            Assert.That(bids[0].BidId, Is.EqualTo(bidId1));
+            Assert.That(bids[0].BasicUser, Is.EqualTo(user1));
+            Assert.That(bids[0].BidSum, Is.EqualTo(bidSum1));
+            Assert.That(bids[0].BidDateTime, Is.EqualTo(bidDate1));
+            Assert.That(bids[1].BidId, Is.EqualTo(bidId2));
+            Assert.That(bids[1].BasicUser, Is.EqualTo(user2));
+            Assert.That(bids[1].BidSum, Is.EqualTo(bidSum2));
+            Assert.That(bids[1].BidDateTime, Is.EqualTo(bidDate2));
         }
 
 

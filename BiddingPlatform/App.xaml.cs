@@ -19,7 +19,9 @@ namespace BiddingPlatform
         {
             base.OnStartup(e);
 
-            string dbConnectionString = "Data Source=DESKTOP-LF9HLFA\\SQLEXPRESS;Initial Catalog=ISSsecuristii;Integrated Security=true;";
+            string dbConnectionString = "Data Source = RICHARD_LAPTOP; Initial Catalog = BidingSystem; Integrated Security = true;";
+            dbConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=BidingSystem;Integrated Security=True";
+
             var auctionRepository = new AuctionRepository(dbConnectionString);
             var auctionService = new AuctionService(auctionRepository);
             var bidRepository = new BidRepository(dbConnectionString);

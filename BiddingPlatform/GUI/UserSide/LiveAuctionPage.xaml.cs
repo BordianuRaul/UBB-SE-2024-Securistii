@@ -26,7 +26,7 @@ namespace BiddingPlatform.GUI
         
         public IAuctionService AuctionService;
         public IBidService BidService;
-        public List<IAuctionModel> auctions;
+        public List<IAuctionModel> Auctions;
 
         public LiveAuctionPage(IAuctionService auctionService, IBidService bidService)
         {
@@ -35,41 +35,37 @@ namespace BiddingPlatform.GUI
             this.BidService = bidService;
             auctions = this.AuctionService.GetAuctions();
             
-            name1.Text= auctions[0].name;
-            name2.Text = auctions[1].name;
-            //name3.Text= auctions[2].name;
-            description1.Text = auctions[0].description;
-            description2.Text = auctions[1].description;
-            //description3.Text = auctions[2].description;
-            price1.Text = auctions[0].currentMaxSum.ToString();
-            price2.Text = auctions[1].currentMaxSum.ToString();
-            //price3.Text = auctions[2].currentMaxSum.ToString();
+            auctionNameTextBox1.Text= Auctions[0].name;
+            auctionNameTextBox2.Text = Auctions[1].name;
+
+            auctionDescriptionTextBox1.Text = Auctions[0].description;
+            auctionDescriptionTextBox2.Text = Auctions[1].description;
+
+            currentBidMinimumPriceTextBox1.Text = Auctions[0].currentMaxSum.ToString();
+            currentBidMinimumPriceTextBox2.Text = Auctions[1].currentMaxSum.ToString();
             
-            time1.Text= (DateTime.Now - auctions[0].startingDate).Hours.ToString();
-            time2.Text = (DateTime.Now - auctions[1].startingDate).Hours.ToString();
-            //time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
+            timeUntilAuctionEndsTextBox1.Text = (DateTime.Now - Auctions[0].startingDate).Hours.ToString();
+            timeUntilAuctionEndsTextBox2.Text = (DateTime.Now - Auctions[1].startingDate).Hours.ToString();
         }
 
 
-        private void NavigateToDetailsPage(int index)
+        private void NavigateToDetailsPage(int auctionIndex)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(index, AuctionService, BidService);
+            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(auctionIndex, AuctionService, BidService);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void EnterAuctionButton1_Click(object sender, RoutedEventArgs e)
         {
-            //Button button = sender as Button;
-            //int index = Convert.ToInt32(button.Tag); 
             this.NavigateToDetailsPage(0);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void EnterAuctionButton2_Click(object sender, RoutedEventArgs e)
         {
             this.NavigateToDetailsPage(1);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void EnterAuctionButton3_Click(object sender, RoutedEventArgs e)
         {
             this.NavigateToDetailsPage(2);
         }

@@ -36,18 +36,18 @@ namespace BiddingPlatform.GUI.AdminSide
             this.bidService = bidService;
             auctions = this.AuctionService.GetAuctions();
 
-            name1.Text = auctions[0].name;
-            name2.Text = auctions[1].name;
+            name1.Text = auctions[0].Name;
+            name2.Text = auctions[1].Name;
             //name3.Text = auctions[3].name;
-            description1.Text = auctions[0].description;
-            description2.Text = auctions[1].description;
+            description1.Text = auctions[0].Description;
+            description2.Text = auctions[1].Description;
             //description3.Text = auctions[2].description;
-            price1.Text = auctions[0].currentMaxSum.ToString();
-            price2.Text = auctions[1].currentMaxSum.ToString();
+            price1.Text = auctions[0].CurrentMaxSum.ToString();
+            price2.Text = auctions[1].CurrentMaxSum.ToString();
             //price3.Text = auctions[2].currentMaxSum.ToString();
 
-            time1.Text = (DateTime.Now - auctions[0].startingDate).Hours.ToString();
-            time2.Text = (DateTime.Now - auctions[1].startingDate).Hours.ToString();
+            time1.Text = (DateTime.Now - auctions[0].StartingDate).Hours.ToString();
+            time2.Text = (DateTime.Now - auctions[1].StartingDate).Hours.ToString();
             //time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
         }
 

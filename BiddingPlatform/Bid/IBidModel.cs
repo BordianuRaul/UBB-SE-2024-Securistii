@@ -4,9 +4,9 @@ namespace BiddingPlatform.Bid
 {
     public interface IBidModel
     {
-        DateTime bidDate { get; set; }
-        int bidId { get; set; }
-        float bidSum { get; set; }
-        BasicUser user { get; set; }
+        DateTime BidDateTime { get; set; }
+        int BidId { get; set; }
+        float BidSum { get; set; }
+        BasicUser BasicUser { get; set; }
     }
 }
