@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.Bid
 {
-    public class BidModel
+    public class BidModel : IBidModel
     {
         public int bidId { get; set; }
         public BasicUser user { get; set; }

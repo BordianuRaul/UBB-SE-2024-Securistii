@@ -25,16 +25,16 @@ namespace BiddingPlatform.GUI.AdminSide
     /// </summary>
     public partial class AdminLiveAuctionPage : Page
     {
-        public AuctionService AuctionService;
-        public BidService bidService;
-        public List<AuctionModel> auctions;
+        public IAuctionService AuctionService;
+        public IBidService bidService;
+        public List<IAuctionModel> auctions;
 
-        public AdminLiveAuctionPage(AuctionService auctionService, BidService bidService)
+        public AdminLiveAuctionPage(IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
             this.AuctionService = auctionService;
             this.bidService = bidService;
-            List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.getAuctions();
 
             name1.Text = auctions[0].name;
             name2.Text = auctions[1].name;

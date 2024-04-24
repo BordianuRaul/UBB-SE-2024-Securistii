@@ -25,19 +25,19 @@ namespace BiddingPlatform.GUI
     {
         public int auctionIndex;
 
-        public AuctionService AuctionService;
-        public BidService BidService;
+        public IAuctionService AuctionService;
+        public IBidService BidService;
 
-        public List<BidModel> bidModels;
-        public List<AuctionModel> auctions;
-        public AuctionDetailsPage(int index, AuctionService auctionService, BidService bidService)
+        public List<IBidModel> bidModels;
+        public List<IAuctionModel> auctions;
+        public AuctionDetailsPage(int index, IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
             auctionIndex = index;
             this.BidService = bidService;
             this.AuctionService = auctionService;
             //List<BidModel> bidModels = this.BidService.getBids();
-            List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.getAuctions();
             
 
             AuctionNameBid.Text= auctions[index].name;

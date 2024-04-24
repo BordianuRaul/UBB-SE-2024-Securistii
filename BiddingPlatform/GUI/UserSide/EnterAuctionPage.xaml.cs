@@ -24,17 +24,17 @@ namespace BiddingPlatform.GUI
     public partial class EnterAuctionPage : Page
     {
         public int auctionIndex;
-        public AuctionService AuctionService;
-        public BidService BidService;
-        public List<BidModel> bidModels;
-        public List<AuctionModel> auctions;
-        public EnterAuctionPage(int index, AuctionService auctionService, BidService bidService)
+        public IAuctionService AuctionService;
+        public IBidService BidService;
+        public List<IBidModel> bidModels;
+        public List<IAuctionModel> auctions;
+        public EnterAuctionPage(int index, IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
             auctionIndex = index;
             this.AuctionService = auctionService;
             this.BidService = bidService;
-            List<AuctionModel> auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.getAuctions();
 
             AuctionNameBid.Text = auctions[index].name;
             CurrentBid.Text = auctions[index].currentMaxSum.ToString();

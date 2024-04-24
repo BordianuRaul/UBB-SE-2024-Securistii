@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BiddingPlatform.User
 {
-    public class UserTemplate
+    public class UserTemplate : IUserTemplate
     {
         private int Userid { get; set; }
         private string username { get; set; }
