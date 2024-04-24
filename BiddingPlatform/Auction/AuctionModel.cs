@@ -11,44 +11,44 @@ namespace BiddingPlatform.Auction
 {
     public class AuctionModel : IAuctionModel
     {
-        public int auctionId {  get; set; }
-        public DateTime startingDate { get; set; }
-        public string description {  get; set; }
-        public string name { get; set; }
-        public float currentMaxSum {  get; set; }
-        private List<BasicUser> listOfUsers { get; set; }
-        public List<IBidModel> listOfBids { get; set; }
+        public int AuctionId {  get; set; }
+        public DateTime StartingDate { get; set; }
+        public string Description {  get; set; }
+        public string Name { get; set; }
+        public float CurrentMaxBid {  get; set; }
+        public List<BasicUser> UserList { get; set; }
+        public List<IBidModel> BidList { get; set; }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<IBidModel> listOfBids)
+        public AuctionModel(int id, DateTime startingDate, string description, string name, float currentMaxBid, List<BasicUser> userList, List<IBidModel> bidList)
         {
-            this.auctionId = _id;
-            this.startingDate = startingDate;
-            this.description = description;
-            this.name = name;
-            this.currentMaxSum = currentMaxSum;
-            this.listOfUsers = listOfUsers;
-            this.listOfBids = listOfBids;
+            this.AuctionId = id;
+            this.StartingDate = startingDate;
+            this.Description = description;
+            this.Name = name;
+            this.CurrentMaxBid = currentMaxBid;
+            this.UserList = userList;
+            this.BidList = bidList;
         }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxBid)
         {
-            this.auctionId = _id;
-            this.startingDate = startingDate;
-            this.description = description;
-            this.name = name;
-            this.currentMaxSum = currentMaxSum;
-            this.listOfUsers = new List<BasicUser>();
-            this.listOfBids = new List<IBidModel>();
+            this.AuctionId = _id;
+            this.StartingDate = startingDate;
+            this.Description = description;
+            this.Name = name;
+            this.CurrentMaxBid = currentMaxBid;
+            this.UserList = new List<BasicUser>();
+            this.BidList = new List<IBidModel>();
         }
 
-        public void addUserToAuction(BasicUser user)
+        public void AddUserToAuction(BasicUser user)
         {
-            this.listOfUsers.Add(user);
+            this.UserList.Add(user);
         }
 
-        public void addBidToAuction(IBidModel bid)
+        public void AddBidToAuction(IBidModel bid)
         {
-            this.listOfBids.Add(bid);
+            this.BidList.Add(bid);
         }
     }
 }

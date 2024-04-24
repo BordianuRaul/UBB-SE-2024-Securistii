@@ -18,10 +18,10 @@ namespace NUnitMacrow.AuctionTests
         public void TestAddUserToAuction_UserAddedToList()
         {
             var userMock = new BasicUser(1, "User1", "nickname1");
-            var auction = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f);
+            var auctionMock = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f);
 
-            auction.addUserToAuction(userMock);
-            Assert.Contains(userMock, auction.listOfUsers);
+            auctionMock.AddUserToAuction(userMock);
+            Assert.Contains(userMock, auctionMock.UserList);
         }
 
         [Test]
@@ -29,10 +29,10 @@ namespace NUnitMacrow.AuctionTests
         {
             var userMock = new BasicUser(1, "User1", "nickname1");
             var bidMock = new BidModel(1, userMock, 50.0f, DateTime.Now);
-            var auction = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f);
+            var auctionMock = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f);
 
-            auction.addBidToAuction(bidMock);
-            Assert.Contains(bidMock, auction.listOfBids);
+            auctionMock.AddBidToAuction(bidMock);
+            Assert.Contains(bidMock, auctionMock.BidList);
         }
 
         [Test]
@@ -43,13 +43,13 @@ namespace NUnitMacrow.AuctionTests
             var userMock3 = new BasicUser(3, "User3", "nickaname3");
             var userMocks = new List<BasicUser> { userMock1, userMock2 };
 
-            var bidMock = new BidModel(1, userMock1, 50.0f, DateTime.Now);
-            var bidMocks = new List<BidModel> {bidMock};
+            var bidMock = new BidModel(1, userMock3, 50.0f, DateTime.Now);
+            var bidMocks = new List<IBidModel> {bidMock};
 
-            var auction = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f, userMocks, bidMocks);
+            var auctionMock = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f, userMocks, bidMocks);
 
-            CollectionAssert.AreEqual(userMocks, auction.listOfUsers);
-            CollectionAssert.AreEqual(bidMocks, auction.listOfBids);
+            CollectionAssert.AreEqual(userMocks, auctionMock.UserList);
+            CollectionAssert.AreEqual(bidMocks, auctionMock.BidList);
         }
     }
 }

@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using BiddingPlatform.Auction;
 using BiddingPlatform.Bid;
 using BiddingPlatform.User;
 
@@ -26,44 +25,42 @@ namespace BiddingPlatform.GUI.AdminSide
     {
         public IAuctionService AuctionService;
         public IBidService BidService;
-        public List<IAuctionModel> auctions;
-        public AddAuctionPage(IAuctionService auctionService)
+        public List<IAuctionModel> AuctionList;
+        public AddAuctionPage(IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
+            this.BidService = bidService;
             this.AuctionService = auctionService;
-            auctions = this.AuctionService.getAuctions();
+            this.AuctionList = this.AuctionService.getAuctions();
         }
 
-        private void CancelAddAuction(object sender, RoutedEventArgs e)
+        private void NavigateBackToAdminLiveAuctionPage(object sender, RoutedEventArgs e)
         {
-            AdminLiveAuctionPage AdminLiveAuctionPage = new AdminLiveAuctionPage(this.AuctionService, this.BidService);
-            NavigationService?.Navigate(AdminLiveAuctionPage);
+            var adminLiveAuctionPage = new AdminLiveAuctionPage(this.AuctionService, this.BidService);
+            NavigationService?.Navigate(adminLiveAuctionPage);
         }
 
-        private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+        private void HandleAddAuctionButtonClick(object sender, RoutedEventArgs e)
         {
-            String name = AddName.Text;
-            string description = AddDescription.Text;
-            string dateString = AddDeadline.Text;
+            string auctionName = NameTextbox.Text;
+            string auctionDescription = DescriptionTextbox.Text;
+            string auctionDeadlineDateString = DeadlineTextbox.Text;
        
-
-            DateTime deadlineDate;
-            if (DateTime.TryParseExact(dateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out deadlineDate))
+            if (DateTime.TryParseExact(auctionDeadlineDateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime auctionDeadlineDate))
             {
-                Console.WriteLine("Parsed date: " + deadlineDate);
+                Console.WriteLine("Parsed date: " + auctionDeadlineDate);
             }
             else
             {
                 Console.WriteLine("Unable to parse the date string.");
             }
-            //String date = AddDeadline.Text;
-            int suminput = 0;
-            if (!int.TryParse(AddStartingPrice.Text, out suminput))
+
+            if (!int.TryParse(StartingPriceTextbox.Text, out int auctionStartingBid))
             {
                 MessageBox.Show("Please enter a valid number");
                 return;
             }
-            this.AuctionService.addBid(name, description, deadlineDate, suminput);
+            this.AuctionService.addBid(auctionName, auctionDescription, auctionDeadlineDate, auctionStartingBid);
         }
     }
 }

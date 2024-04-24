@@ -22,7 +22,6 @@ namespace BiddingPlatform.Auction
 
         public AuctionRepository(List<IAuctionModel> listOfAuctions, string connectionString)
         {
-            //this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
             this.ConnectionString = connectionString;
             this.listOfAuctions = listOfAuctions;
         }
