@@ -8,9 +8,9 @@ namespace BiddingPlatform.User
 {
     public class UserService : IUserService
     {
-        private UserRepository UserRepository { get; set; }
+        private IUserRepository UserRepository { get; set; }
 
-        public UserService(UserRepository userRepository)
+        public UserService(IUserRepository userRepository)
         {
             UserRepository = userRepository; 
         }
