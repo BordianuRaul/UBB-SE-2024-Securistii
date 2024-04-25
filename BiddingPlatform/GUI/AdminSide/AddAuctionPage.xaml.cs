@@ -31,7 +31,7 @@ namespace BiddingPlatform.GUI.AdminSide
             InitializeComponent();
             this.BidService = bidService;
             this.AuctionService = auctionService;
-            this.AuctionList = this.AuctionService.getAuctions();
+            this.AuctionList = this.AuctionService.GetAuctions();
         }
 
         private void NavigateBackToAdminLiveAuctionPage(object sender, RoutedEventArgs e)
@@ -60,7 +60,7 @@ namespace BiddingPlatform.GUI.AdminSide
                 MessageBox.Show("Please enter a valid number");
                 return;
             }
-            this.AuctionService.addBid(auctionName, auctionDescription, auctionDeadlineDate, auctionStartingBid);
+            this.AuctionService.AddBid(auctionName, auctionDescription, auctionDeadlineDate, auctionStartingBid);
         }
     }
 }

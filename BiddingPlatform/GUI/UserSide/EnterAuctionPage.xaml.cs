@@ -37,7 +37,7 @@ namespace BiddingPlatform.GUI
             auctions = this.AuctionService.GetAuctions();
 
             AuctionNameBid.Text = auctions[index].Name;
-            CurrentBid.Text = auctions[index].CurrentMaxSum.ToString();
+            CurrentBid.Text = auctions[index].CurrentMaxBid.ToString();
             TimeLeft.Text = (DateTime.Now - auctions[index].StartingDate).Hours.ToString();
 
 

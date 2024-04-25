@@ -183,7 +183,7 @@ namespace BiddingPlatform.Auction
 
         public float GetBidMaxSum(int index)
         {
-            return this.listOfAuctions[index].CurrentMaxSum;
+            return this.listOfAuctions[index].CurrentMaxBid;
         }
 
     }
