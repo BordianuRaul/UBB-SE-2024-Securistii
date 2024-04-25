@@ -30,9 +30,8 @@ namespace NUnitMacrow.AuctionTests
             var userMock = new BasicUser(1, "User1", "nickname1");
             var bidMock = new BidModel(1, userMock, 50.0f, DateTime.Now);
             var auctionMock = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f);
-
-            auctionMock.AddBidToAuction(bidMock);
-            Assert.Contains(bidMock, auctionMock.BidList);
+            auction.addBidToAuction(bidMock);
+            Assert.Contains(bidMock, auction.ListOfBids);
         }
 
         [Test]
@@ -48,8 +47,8 @@ namespace NUnitMacrow.AuctionTests
 
             var auctionMock = new AuctionModel(1, DateTime.Now, "Test Auction", "Test", 100.0f, userMocks, bidMocks);
 
-            CollectionAssert.AreEqual(userMocks, auctionMock.UserList);
-            CollectionAssert.AreEqual(bidMocks, auctionMock.BidList);
+            CollectionAssert.AreEqual(userMocks, auction.ListOfUsers);
+            CollectionAssert.AreEqual(bidMocks, auction.ListOfBids);
         }
     }
 }

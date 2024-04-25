@@ -46,7 +46,6 @@ namespace BiddingPlatform.GUI.AdminSide
 
             FirstDurationTextbox.Text = (DateTime.Now - AuctionList[0].StartingDate).Hours.ToString();
             SecondDurationTextbox.Text = (DateTime.Now - AuctionList[1].StartingDate).Hours.ToString();
-            
         }
 
         private void HandleEnterAuctionButtonClick(object sender, RoutedEventArgs e)

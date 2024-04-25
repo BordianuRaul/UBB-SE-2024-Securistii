@@ -10,8 +10,8 @@ namespace BiddingPlatform.Auction
 {
     public interface IAuctionModel
     {
-        public List<IBidModel> BidList { get; set; }
-        public List<BasicUser> UserList { get; set; }
+        public List<BasicUser> ListOfUsers { get; set; }
+        public List<IBidModel> ListOfBids { get; set; }
         public int AuctionId { get; set; }
         public DateTime StartingDate { get; set; }
         public string Description { get; set; }

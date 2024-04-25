@@ -34,27 +34,28 @@ namespace BiddingPlatform.GUI
             auctionIndex = index;
             this.AuctionService = auctionService;
             this.BidService = bidService;
-            auctions = this.AuctionService.getAuctions();
+            auctions = this.AuctionService.GetAuctions();
 
-            AuctionNameBid.Text = auctions[index].name;
-            CurrentBid.Text = auctions[index].currentMaxSum.ToString();
-            TimeLeft.Text = (DateTime.Now - auctions[index].startingDate).Hours.ToString();
+            AuctionNameBid.Text = auctions[index].Name;
+            CurrentBid.Text = auctions[index].CurrentMaxSum.ToString();
+            TimeLeft.Text = (DateTime.Now - auctions[index].StartingDate).Hours.ToString();
 
 
-            int n = auctions[index].listOfBids.Count;
+            int n = auctions[index].ListOfBids.Count;
             for (int i = 0; i < n; i++)
             {
-                BidHistory.Text += auctions[index].listOfBids[i].bidSum.ToString() + "\n";
+                BidHistory.Text += auctions[index].ListOfBids[i].BidSum.ToString() + "\n";
+
             }
 
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Back_Button_Clicked(object sender, RoutedEventArgs e)
         {
             AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(auctionIndex, this.AuctionService, this.BidService);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Bid_Button_Clicked(object sender, RoutedEventArgs e)
         {
             int suminput = 0;
             if (!int.TryParse(SumInput.Text, out suminput))
@@ -63,7 +64,7 @@ namespace BiddingPlatform.GUI
                 return;
             }
             suminput = Convert.ToInt32(SumInput.Text);
-            if (suminput <= this.AuctionService.getMaxBidSum(auctionIndex))
+            if (suminput <= this.AuctionService.GetMaxBidSum(auctionIndex))
             {
                 MessageBox.Show("Invalid bid sum!\n The bid must be greater than that current maximum one.");
             }

@@ -16,8 +16,8 @@ namespace BiddingPlatform.Auction
         public string Description {  get; set; }
         public string Name { get; set; }
         public float CurrentMaxBid {  get; set; }
-        public List<BasicUser> UserList { get; set; }
-        public List<IBidModel> BidList { get; set; }
+        private List<BasicUser> ListOfUsers { get; set; }
+        public List<IBidModel> ListOfBids { get; set; }
 
         public AuctionModel(int id, DateTime startingDate, string description, string name, float currentMaxBid, List<BasicUser> userList, List<IBidModel> bidList)
         {
@@ -26,8 +26,9 @@ namespace BiddingPlatform.Auction
             this.Description = description;
             this.Name = name;
             this.CurrentMaxBid = currentMaxBid;
-            this.UserList = userList;
-            this.BidList = bidList;
+            this.ListOfUsers = listOfUsers;
+            this.ListOfBids = listOfBids;
+
         }
 
         public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxBid)
@@ -37,18 +38,18 @@ namespace BiddingPlatform.Auction
             this.Description = description;
             this.Name = name;
             this.CurrentMaxBid = currentMaxBid;
-            this.UserList = new List<BasicUser>();
-            this.BidList = new List<IBidModel>();
+            this.ListOfUsers = new List<BasicUser>();
+            this.ListOfBids = new List<IBidModel>();
         }
 
         public void AddUserToAuction(BasicUser user)
         {
-            this.UserList.Add(user);
+            this.ListOfUsers.Add(user);
         }
 
         public void AddBidToAuction(IBidModel bid)
         {
-            this.BidList.Add(bid);
+            this.ListOfBids.Add(bid);
         }
     }
 }
