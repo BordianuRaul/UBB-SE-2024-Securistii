@@ -18,10 +18,10 @@ namespace BiddingPlatform.User
             this.LoadUsersFromDataBase();
         }
 
-        public UserRepository(List<IUserTemplate> _listOfUsers, string connectionString)
+        public UserRepository(List<IUserTemplate> listOfUsers, string connectionString)
         {
             this.ConnectionString = connectionString;
-            this.ListOfUsers = _listOfUsers;
+            this.ListOfUsers = listOfUsers;
         }
         private void LoadUsersFromDataBase()
         {

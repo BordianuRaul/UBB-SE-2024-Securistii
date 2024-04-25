@@ -28,7 +28,6 @@ namespace BiddingPlatform.Auction
             this.CurrentMaxBid = currentMaxBid;
             this.ListOfUsers = listOfUsers;
             this.ListOfBids = listOfBids;
-
         }
 
         public AuctionModel(int id, DateTime startingDate, string description, string name, float currentMaxBid)

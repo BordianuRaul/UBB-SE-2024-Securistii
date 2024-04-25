@@ -23,25 +23,25 @@ namespace BiddingPlatform.GUI
     /// </summary>
     public partial class AuctionDetailsPage : Page
     {
-        public int auctionIndex;
+        public int AuctionIndex;
 
         public IAuctionService AuctionService;
         public IBidService BidService;
 
-        public List<IBidModel> bidModels;
-        public List<IAuctionModel> auctions;
+        public List<IBidModel> BidModels;
+        public List<IAuctionModel> Auctions;
 
         public AuctionDetailsPage(int currentAuctionIndex, IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
-            auctionIndex = currentAuctionIndex;
+            AuctionIndex = currentAuctionIndex;
             this.BidService = bidService;
             this.AuctionService = auctionService;
-            auctions = this.AuctionService.GetAuctions();
-            AuctionNameBid.Text = auctions[currentAuctionIndex].Name;
-            CurrentBid.Text = auctions[currentAuctionIndex].CurrentMaxBid.ToString();
-            TimeLeft.Text = (DateTime.Now - auctions[currentAuctionIndex].StartingDate).Hours.ToString();
-            foreach(IBidModel bid in auctions[currentAuctionIndex].ListOfBids)
+            Auctions = this.AuctionService.GetAuctions();
+            AuctionNameBid.Text = Auctions[currentAuctionIndex].Name;
+            CurrentBid.Text = Auctions[currentAuctionIndex].CurrentMaxBid.ToString();
+            TimeLeft.Text = (DateTime.Now - Auctions[currentAuctionIndex].StartingDate).Hours.ToString();
+            foreach (IBidModel bid in Auctions[currentAuctionIndex].ListOfBids)
             {
                 BidHistory.Text += bid.BidSum.ToString() + "\n";
             }
@@ -49,14 +49,14 @@ namespace BiddingPlatform.GUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            LiveAuctionPage LiveAuctionPage = new LiveAuctionPage(this.AuctionService, this.BidService);
-            NavigationService?.Navigate(LiveAuctionPage);
+            LiveAuctionPage liveAuctionPage = new LiveAuctionPage(this.AuctionService, this.BidService);
+            NavigationService?.Navigate(liveAuctionPage);
         }
 
         private void JoinAuction(object sender, RoutedEventArgs e)
         {
-            EnterAuctionPage EnterAuctionPage = new EnterAuctionPage(auctionIndex, this.AuctionService, this.BidService);
-            NavigationService?.Navigate(EnterAuctionPage);
+            EnterAuctionPage enterAuctionPage = new EnterAuctionPage(AuctionIndex, this.AuctionService, this.BidService);
+            NavigationService?.Navigate(enterAuctionPage);
         }
     }
 }
