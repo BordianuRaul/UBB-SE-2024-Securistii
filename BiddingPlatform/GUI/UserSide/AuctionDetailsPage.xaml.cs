@@ -37,7 +37,8 @@ namespace BiddingPlatform.GUI
             auctionIndex = currentAuctionIndex;
             this.BidService = bidService;
             this.AuctionService = auctionService;
-            auctions = this.AuctionService.getAuctions();
+            //List<BidModel> bidModels = this.BidService.getBids();
+            auctions = this.AuctionService.GetAuctions();
             
 
             AuctionNameBid.Text = auctions[currentAuctionIndex].Name;

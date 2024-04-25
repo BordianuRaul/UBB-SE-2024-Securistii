@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,38 +15,39 @@ namespace BiddingPlatform.Auction
         public DateTime StartingDate { get; set; }
         public string Description {  get; set; }
         public string Name { get; set; }
-        public float CurrentMaxSum {  get; set; }
-        public List<BasicUser> ListOfUsers { get; set; }
+        public float CurrentMaxBid {  get; set; }
+        private List<BasicUser> ListOfUsers { get; set; }
         public List<IBidModel> ListOfBids { get; set; }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<IBidModel> listOfBids)
+        public AuctionModel(int id, DateTime startingDate, string description, string name, float currentMaxBid, List<BasicUser> userList, List<IBidModel> bidList)
         {
-            this.AuctionId = _id;
+            this.AuctionId = id;
             this.StartingDate = startingDate;
             this.Description = description;
             this.Name = name;
-            this.CurrentMaxSum = currentMaxSum;
+            this.CurrentMaxBid = currentMaxBid;
             this.ListOfUsers = listOfUsers;
             this.ListOfBids = listOfBids;
+
         }
 
-        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum)
+        public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxBid)
         {
             this.AuctionId = _id;
             this.StartingDate = startingDate;
             this.Description = description;
             this.Name = name;
-            this.CurrentMaxSum = currentMaxSum;
+            this.CurrentMaxBid = currentMaxBid;
             this.ListOfUsers = new List<BasicUser>();
             this.ListOfBids = new List<IBidModel>();
         }
 
-        public void addUserToAuction(BasicUser user)
+        public void AddUserToAuction(BasicUser user)
         {
             this.ListOfUsers.Add(user);
         }
 
-        public void addBidToAuction(IBidModel bid)
+        public void AddBidToAuction(IBidModel bid)
         {
             this.ListOfBids.Add(bid);
         }

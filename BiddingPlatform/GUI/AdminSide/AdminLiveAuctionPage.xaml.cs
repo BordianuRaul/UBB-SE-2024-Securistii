@@ -20,46 +20,43 @@ using BiddingPlatform.User;
 
 namespace BiddingPlatform.GUI.AdminSide
 {
-    /// <summary>
-    /// Interaction logic for AdminLiveAuctionPage.xaml
-    /// </summary>
+
     public partial class AdminLiveAuctionPage : Page
     {
         public IAuctionService AuctionService;
-        public IBidService bidService;
-        public List<IAuctionModel> auctions;
+        public IBidService BidService;
+        public List<IAuctionModel> AuctionList;
 
         public AdminLiveAuctionPage(IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
             this.AuctionService = auctionService;
-            this.bidService = bidService;
-            auctions = this.AuctionService.getAuctions();
+            this.BidService = bidService;
+            this.AuctionList = this.AuctionService.getAuctions();
 
-            name1.Text = auctions[0].Name;
-            name2.Text = auctions[1].Name;
-            //name3.Text = auctions[3].name;
-            description1.Text = auctions[0].Description;
-            description2.Text = auctions[1].Description;
-            //description3.Text = auctions[2].description;
-            price1.Text = auctions[0].CurrentMaxSum.ToString();
-            price2.Text = auctions[1].CurrentMaxSum.ToString();
-            //price3.Text = auctions[2].currentMaxSum.ToString();
+            FirstNameTextbox.Text = AuctionList[0].Name;
+            SecondNameTextbox.Text = AuctionList[1].Name;
+            
+            FirstDescriptionTextbox.Text = AuctionList[0].Description;
+            SecondDescriptionTextbox.Text = AuctionList[1].Description;
+            
+            FirstPriceTextbox.Text = AuctionList[0].CurrentMaxBid.ToString();
+            SecondPriceTextbox.Text = AuctionList[1].CurrentMaxBid.ToString();
+            
 
-            time1.Text = (DateTime.Now - auctions[0].StartingDate).Hours.ToString();
-            time2.Text = (DateTime.Now - auctions[1].StartingDate).Hours.ToString();
-            //time3.Text = (DateTime.Now - auctions[2].startingDate).Hours.ToString();
+            FirstDurationTextbox.Text = (DateTime.Now - AuctionList[0].StartingDate).Hours.ToString();
+            SecondDurationTextbox.Text = (DateTime.Now - AuctionList[1].StartingDate).Hours.ToString();
         }
 
-        private void EnterAuction(object sender, RoutedEventArgs e)
+        private void HandleEnterAuctionButtonClick(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(1, this.AuctionService, this.bidService);
+            var auctionDetailsPage = new AuctionDetailsPage(1, this.AuctionService, this.BidService);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 
-        private void AddAuction(object sender, RoutedEventArgs e)
+        private void HandleAddAuctionButtonClick(object sender, RoutedEventArgs e)
         {
-            AddAuctionPage AddAuctionPage = new AddAuctionPage(this.AuctionService);
+            var AddAuctionPage = new AddAuctionPage(this.AuctionService, this.BidService);
             NavigationService?.Navigate(AddAuctionPage);
         }
     }
