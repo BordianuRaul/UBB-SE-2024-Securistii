@@ -22,7 +22,7 @@ namespace NUnitMacrow.UserTests
         [TearDown]
         public void TearDown()
         {
-            userRepository.listOfUsers.Clear();
+            userRepository.ListOfUsers.Clear();
         }
 
         [Test]
@@ -32,7 +32,7 @@ namespace NUnitMacrow.UserTests
             IUserTemplate user = new BasicUser(1, "UserName", "User");
 
             // Act
-            userRepository.addUserToRepo(user);
+            userRepository.AddUserToRepo(user);
 
             // Assert
             List<IUserTemplate> users = userRepository.GetListOfUsers();
@@ -45,10 +45,10 @@ namespace NUnitMacrow.UserTests
         {
             // Arrange
             IUserTemplate user = new BasicUser(1, "UserName", "User");
-            userRepository.addUserToRepo(user);
+            userRepository.AddUserToRepo(user);
 
             // Act
-            userRepository.removeUserFromRepo(user);
+            userRepository.RemoveUserFromRepo(user);
 
             // Assert
             List<IUserTemplate> users = userRepository.GetListOfUsers();
@@ -62,10 +62,10 @@ namespace NUnitMacrow.UserTests
             // Arrange
             IUserTemplate oldUser = new BasicUser(1, "OldUserName", "OldUser");
             IUserTemplate newUser = new BasicUser(1, "NewUserName", "NewUser");
-            userRepository.addUserToRepo(oldUser);
+            userRepository.AddUserToRepo(oldUser);
 
             // Act
-            userRepository.updateUserIntoRepo(oldUser, newUser);
+            userRepository.UpdateUserIntoRepo(oldUser, newUser);
 
             // Assert
             List<IUserTemplate> users = userRepository.GetListOfUsers();
@@ -80,8 +80,8 @@ namespace NUnitMacrow.UserTests
             // Arrange
             IUserTemplate user1 = new BasicUser(1, "UserName1", "User1");
             IUserTemplate user2 = new BasicUser(2, "UserName2", "User2");
-            userRepository.addUserToRepo(user1);
-            userRepository.addUserToRepo(user2);
+            userRepository.AddUserToRepo(user1);
+            userRepository.AddUserToRepo(user2);
 
             // Act
             List<IUserTemplate> users = userRepository.GetListOfUsers();

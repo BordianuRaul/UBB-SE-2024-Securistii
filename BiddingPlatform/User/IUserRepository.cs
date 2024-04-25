@@ -8,9 +8,9 @@ namespace BiddingPlatform.User
 {
     public interface IUserRepository
     {
-        void addUserToRepo(IUserTemplate User);
-        void removeUserFromRepo(IUserTemplate User);
-        void updateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser);
+        void AddUserToRepo(IUserTemplate user);
+        void RemoveUserFromRepo(IUserTemplate user);
+        void UpdateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser);
         List<IUserTemplate> GetListOfUsers();
     }
 }

@@ -23,32 +23,24 @@ namespace BiddingPlatform.GUI
     /// </summary>
     public partial class LiveAuctionPage : Page
     {
-        
         public IAuctionService AuctionService;
         public IBidService BidService;
         public List<IAuctionModel> Auctions;
-
         public LiveAuctionPage(IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
-            this.AuctionService= auctionService;
+            this.AuctionService = auctionService;
             this.BidService = bidService;
             Auctions = this.AuctionService.GetAuctions();
-            
-            auctionNameTextBox1.Text= Auctions[0].Name;
+            auctionNameTextBox1.Text = Auctions[0].Name;
             auctionNameTextBox2.Text = Auctions[1].Name;
-
             auctionDescriptionTextBox1.Text = Auctions[0].Description;
             auctionDescriptionTextBox2.Text = Auctions[1].Description;
-
             currentBidMinimumPriceTextBox1.Text = Auctions[0].CurrentMaxBid.ToString();
             currentBidMinimumPriceTextBox2.Text = Auctions[1].CurrentMaxBid.ToString();
-            
             timeUntilAuctionEndsTextBox1.Text = (DateTime.Now - Auctions[0].StartingDate).Hours.ToString();
             timeUntilAuctionEndsTextBox2.Text = (DateTime.Now - Auctions[1].StartingDate).Hours.ToString();
         }
-
-
         private void NavigateToDetailsPage(int auctionIndex)
         {
             AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(auctionIndex, AuctionService, BidService);

@@ -8,11 +8,11 @@ namespace BiddingPlatform.User
 {
     public class AdminUser : UserTemplate
     {
-        private string username { get; set; }
+        private string Username { get; set; }
         private int UserID { get; set; }
         public AdminUser(int giveUserID, string givenUsername) : base(giveUserID, givenUsername)
         {
-            this.username = givenUsername;
+            this.Username = givenUsername;
             this.UserID = giveUserID;
         }
     }

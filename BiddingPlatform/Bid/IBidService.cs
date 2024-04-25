@@ -6,9 +6,9 @@ namespace BiddingPlatform.Bid
     {
         IBidRepository BidRepository { get; set; }
 
-        void addBid(int id, BasicUser user, float bidSum, DateTime biddate);
-        List<IBidModel> getBids();
-        void removeBid(int id, BasicUser user, float bidSum, DateTime biddate);
-        void updateBid(int id, BasicUser olduser, float oldbidSum, DateTime oldbiddate, BasicUser newuser, float newbidSum, DateTime newbiddate);
+        void AddBid(int id, BasicUser user, float bidSum, DateTime biddate);
+        List<IBidModel> GetBids();
+        void RemoveBid(int id, BasicUser user, float bidSum, DateTime biddate);
+        void UpdateBid(int id, BasicUser olduser, float oldbidSum, DateTime oldbiddate, BasicUser newuser, float newbidSum, DateTime newbiddate);
     }
 }

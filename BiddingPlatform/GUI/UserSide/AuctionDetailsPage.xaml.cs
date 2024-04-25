@@ -37,15 +37,11 @@ namespace BiddingPlatform.GUI
             auctionIndex = currentAuctionIndex;
             this.BidService = bidService;
             this.AuctionService = auctionService;
-            //List<BidModel> bidModels = this.BidService.getBids();
             auctions = this.AuctionService.GetAuctions();
-            
-
             AuctionNameBid.Text = auctions[currentAuctionIndex].Name;
             CurrentBid.Text = auctions[currentAuctionIndex].CurrentMaxBid.ToString();
-            TimeLeft.Text= (DateTime.Now - auctions[currentAuctionIndex].StartingDate).Hours.ToString();
-
-            foreach(IBidModel bid in auctions[currentAuctionIndex].ListOfBids) 
+            TimeLeft.Text = (DateTime.Now - auctions[currentAuctionIndex].StartingDate).Hours.ToString();
+            foreach(IBidModel bid in auctions[currentAuctionIndex].ListOfBids)
             {
                 BidHistory.Text += bid.BidSum.ToString() + "\n";
             }

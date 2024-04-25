@@ -9,17 +9,23 @@ namespace BiddingPlatform.User
     public class BasicUser : UserTemplate
     {
         private int UserID { get; set; }
-        private string username { get; set; }
-        private string nickname { get; set; }
+        private string Username { get; set; }
+        private string Nickname { get; set; }
 
         public BasicUser(int givenUserID, string giveUserUsername, string giveUserNickname) : base(givenUserID, giveUserUsername)
         {
-            this.username = giveUserUsername;
-            this.nickname = giveUserNickname;
+            this.Username = giveUserUsername;
+            this.Nickname = giveUserNickname;
             this.UserID = givenUserID;
         }
 
-        public string GetNickname() {  return nickname; }
-        public void SetNickname(string nicknameToBeSet) {  nickname = nicknameToBeSet; }
+        public string GetNickname()
+        {
+            return Nickname;
+        }
+        public void SetNickname(string nicknameToBeSet)
+        {
+            Nickname = nicknameToBeSet;
+        }
     }
 }

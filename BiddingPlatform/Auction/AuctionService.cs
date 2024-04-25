@@ -11,7 +11,7 @@ namespace BiddingPlatform.Auction
     {
         private IAuctionRepository AuctionRepository { get; set; }
 
-        public AuctionService(AuctionRepository auctionRepository) 
+        public AuctionService(AuctionRepository auctionRepository)
         {
             this.AuctionRepository = auctionRepository;
         }
@@ -30,7 +30,7 @@ namespace BiddingPlatform.Auction
 
         public List<IAuctionModel> GetAuctions()
         {
-            return this.AuctionRepository.listOfAuctions;
+            return this.AuctionRepository.ListOfAuctions;
         }
 
         public void UpdateAuction(int id, DateTime oldstartingDate, string olddescription, string oldname, float oldcurrentMaxSum, DateTime newstartingDate, string newdescription, string newname, float newcurrentMaxSum)

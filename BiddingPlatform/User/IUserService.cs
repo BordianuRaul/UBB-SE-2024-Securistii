@@ -8,10 +8,10 @@ namespace BiddingPlatform.User
 {
     public interface IUserService
     {
-        void addBasicUser(int id, string username);
-        void addAdminUser(int id, string username);
-        void removeUser(int id, string username);
-        void updateUser(int id, string oldname, string newname);
-        List<IUserTemplate> getListOfUsers();
+        void AddBasicUser(int id, string username);
+        void AddAdminUser(int id, string username);
+        void RemoveUser(int id, string username);
+        void UpdateUser(int id, string oldname, string newname);
+        List<IUserTemplate> GetListOfUsers();
     }
 }

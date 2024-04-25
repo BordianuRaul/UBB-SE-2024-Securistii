@@ -1,44 +1,38 @@
 ﻿using BiddingPlatform.User;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BiddingPlatform.Bid
 {
     public class BidService : IBidService
     {
         public IBidRepository BidRepository { get; set; }
-
         public BidService(IBidRepository bidRepository)
         {
             BidRepository = bidRepository;
         }
 
-        public void addBid(int id, BasicUser user, float bidSum, DateTime biddate)
+        public void AddBid(int id, BasicUser user, float bidSum, DateTime biddate)
         {
             IBidModel toadd = new BidModel(id, user, bidSum, biddate);
 
-            this.BidRepository.addBidToRepo(toadd);
+            this.BidRepository.AddBidToRepo(toadd);
         }
 
-        public void removeBid(int id, BasicUser user, float bidSum, DateTime biddate)
+        public void RemoveBid(int id, BasicUser user, float bidSum, DateTime biddate)
         {
             IBidModel toremove = new BidModel(id, user, bidSum, biddate);
-            this.BidRepository.deleteBidFromRepo(toremove);
+            this.BidRepository.DeleteBidFromRepo(toremove);
         }
 
-        public void updateBid(int id, BasicUser olduser, float oldbidSum, DateTime oldbiddate, BasicUser newuser, float newbidSum, DateTime newbiddate)
+        public void UpdateBid(int id, BasicUser olduser, float oldbidSum, DateTime oldbiddate, BasicUser newuser, float newbidSum, DateTime newbiddate)
         {
             IBidModel oldbid = new BidModel(id, olduser, oldbidSum, oldbiddate);
             IBidModel newbid = new BidModel(id, newuser, newbidSum, newbiddate);
-            this.BidRepository.updateBidIntoRepo(oldbid, newbid);
+            this.BidRepository.UpdateBidIntoRepo(oldbid, newbid);
         }
 
-        public List<IBidModel> getBids()
+        public List<IBidModel> GetBids()
         {
-            return this.BidRepository.getBids();
+            return this.BidRepository.GetBids();
         }
     }
 }

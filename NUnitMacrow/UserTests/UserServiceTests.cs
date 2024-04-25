@@ -13,7 +13,7 @@ namespace NUnitMacrow.UserTests
         public FakeRepo() { 
             _users = new List<IUserTemplate>();
         }
-        public void addUserToRepo(IUserTemplate User)
+        public void AddUserToRepo(IUserTemplate User)
         {
             _users.Add(User);
         }
@@ -23,12 +23,12 @@ namespace NUnitMacrow.UserTests
             return _users;
         }
 
-        public void removeUserFromRepo(IUserTemplate User)
+        public void RemoveUserFromRepo(IUserTemplate User)
         {
             _users.Remove(User);
         }
 
-        public void updateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser)
+        public void UpdateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser)
         {
             _users.Remove(olduser);
             _users.Add(newuser);
@@ -45,7 +45,7 @@ namespace NUnitMacrow.UserTests
             UserService userService = new UserService(fakeRepo);
 
             //Act
-            userService.addBasicUser(1, "user1");
+            userService.AddBasicUser(1, "user1");
 
             //Assert
             Assert.AreEqual(1, fakeRepo.GetListOfUsers().Count);
@@ -59,7 +59,7 @@ namespace NUnitMacrow.UserTests
             UserService userService = new UserService(fakeRepo);
 
             //Act
-            userService.addAdminUser(1, "user1");
+            userService.AddAdminUser(1, "user1");
 
             //Assert
             Assert.AreEqual(1, fakeRepo.GetListOfUsers().Count);
@@ -71,10 +71,10 @@ namespace NUnitMacrow.UserTests
             //Setup
             IUserRepository fakeRepo = new FakeRepo();
             UserService userService = new UserService(fakeRepo);
-            userService.addBasicUser(1, "user1");
+            userService.AddBasicUser(1, "user1");
 
             //Act
-            userService.removeUser(1, "user1");
+            userService.RemoveUser(1, "user1");
 
             //Assert
             Assert.AreEqual(0, fakeRepo.GetListOfUsers().Count);
@@ -86,10 +86,10 @@ namespace NUnitMacrow.UserTests
             //Setup
             IUserRepository fakeRepo = new FakeRepo();
             UserService userService = new UserService(fakeRepo);
-            userService.addBasicUser(1, "user1");
+            userService.AddBasicUser(1, "user1");
 
             //Act
-            userService.updateUser(1, "user1", "user2");
+            userService.UpdateUser(1, "user1", "user2");
 
             //Assert
             Assert.AreEqual(1, fakeRepo.GetListOfUsers().Count);
@@ -101,10 +101,10 @@ namespace NUnitMacrow.UserTests
             //Setup
             IUserRepository fakeRepo = new FakeRepo();
             UserService userService = new UserService(fakeRepo);
-            userService.addBasicUser(1, "user1");
+            userService.AddBasicUser(1, "user1");
 
             //Act
-            List<IUserTemplate> users = userService.getListOfUsers();
+            List<IUserTemplate> users = userService.GetListOfUsers();
 
             //Assert
             Assert.AreEqual(1, users.Count);

@@ -34,7 +34,7 @@ namespace NUnitMacrow.BidTests
             IBidModel mockBid = new BidModel(1, user, 100.0f, DateTime.UtcNow);
 
             // Act
-            bidRepository.addBidToRepo(mockBid);
+            bidRepository.AddBidToRepo(mockBid);
 
             // Assert
             Assert.That(bidRepository.Bids.Count, Is.EqualTo(1));
@@ -50,7 +50,7 @@ namespace NUnitMacrow.BidTests
             bidRepository.Bids.Add(mockBid);
 
             // Act
-            bidRepository.deleteBidFromRepo(mockBid);
+            bidRepository.DeleteBidFromRepo(mockBid);
 
             // Assert
             Assert.That(bidRepository.Bids.Count, Is.EqualTo(0));
@@ -70,7 +70,7 @@ namespace NUnitMacrow.BidTests
             bidRepository.Bids.Add(oldBid);
 
             // Act
-            bidRepository.updateBidIntoRepo(oldBid, newBid);
+            bidRepository.UpdateBidIntoRepo(oldBid, newBid);
 
             // Assert
             Assert.That(bidRepository.Bids.Count, Is.EqualTo(1));
@@ -92,7 +92,7 @@ namespace NUnitMacrow.BidTests
             bidRepository.Bids.Add(bid2);
 
             // Act
-            List<IBidModel> retrievedBids = bidRepository.getBids();
+            List<IBidModel> retrievedBids = bidRepository.GetBids();
 
             // Assert
             Assert.That(retrievedBids.Count, Is.EqualTo(2));

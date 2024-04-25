@@ -1,20 +1,7 @@
-﻿using BiddingPlatform.Auction;
-using BiddingPlatform.Bid;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using BiddingPlatform.Auction;
+using BiddingPlatform.Bid;
 
 namespace BiddingPlatform.GUI
 {
@@ -23,35 +10,31 @@ namespace BiddingPlatform.GUI
     /// </summary>
     public partial class EnterAuctionPage : Page
     {
-        public int auctionIndex;
+        public int AuctionIndex;
         public IAuctionService AuctionService;
         public IBidService BidService;
-        public List<IBidModel> bidModels;
-        public List<IAuctionModel> auctions;
+        public List<IBidModel> BidModels;
+        public List<IAuctionModel> Auctions;
         public EnterAuctionPage(int index, IAuctionService auctionService, IBidService bidService)
         {
             InitializeComponent();
-            auctionIndex = index;
+            AuctionIndex = index;
             this.AuctionService = auctionService;
             this.BidService = bidService;
-            auctions = this.AuctionService.GetAuctions();
+            Auctions = this.AuctionService.GetAuctions();
 
-            AuctionNameBid.Text = auctions[index].Name;
-            CurrentBid.Text = auctions[index].CurrentMaxBid.ToString();
-            TimeLeft.Text = (DateTime.Now - auctions[index].StartingDate).Hours.ToString();
-
-
-            int n = auctions[index].ListOfBids.Count;
+            AuctionNameBid.Text = Auctions[index].Name;
+            CurrentBid.Text = Auctions[index].CurrentMaxBid.ToString();
+            TimeLeft.Text = (DateTime.Now - Auctions[index].StartingDate).Hours.ToString();
+            int n = Auctions[index].ListOfBids.Count;
             for (int i = 0; i < n; i++)
             {
-                BidHistory.Text += auctions[index].ListOfBids[i].BidSum.ToString() + "\n";
-
+                BidHistory.Text += Auctions[index].ListOfBids[i].BidSum.ToString() + "\n";
             }
-
         }
         private void Back_Button_Clicked(object sender, RoutedEventArgs e)
         {
-            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(auctionIndex, this.AuctionService, this.BidService);
+            AuctionDetailsPage auctionDetailsPage = new AuctionDetailsPage(AuctionIndex, this.AuctionService, this.BidService);
             NavigationService?.Navigate(auctionDetailsPage);
         }
 
@@ -64,13 +47,12 @@ namespace BiddingPlatform.GUI
                 return;
             }
             suminput = Convert.ToInt32(SumInput.Text);
-            if (suminput <= this.AuctionService.GetMaxBidSum(auctionIndex))
+            if (suminput <= this.AuctionService.GetMaxBidSum(AuctionIndex))
             {
                 MessageBox.Show("Invalid bid sum!\n The bid must be greater than that current maximum one.");
             }
             suminput = Convert.ToInt32(SumInput.Text);
             BidHistory.Text += suminput.ToString() + "\n";
-
         }
     }
 }

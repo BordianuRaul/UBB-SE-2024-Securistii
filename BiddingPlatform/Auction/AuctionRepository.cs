@@ -1,36 +1,31 @@
-﻿using BiddingPlatform.Bid;
+﻿using System.Data.SqlClient;
+using BiddingPlatform.Bid;
 using BiddingPlatform.User;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BiddingPlatform.Auction
 {
     public class AuctionRepository : IAuctionRepository
     {
-        private string ConnectionString;
-        public List<IAuctionModel> listOfAuctions {  get; set; }
-        public AuctionRepository(string connectionString) 
+        private string connectionString;
+        public List<IAuctionModel> ListOfAuctions { get; set; }
+        public AuctionRepository(string connectionString)
         {
-            this.ConnectionString = connectionString;
-            this.listOfAuctions = new List<IAuctionModel>();
+            this.connectionString = connectionString;
+            this.ListOfAuctions = new List<IAuctionModel>();
             this.LoadAuctionsFromDatabase();
         }
 
         public AuctionRepository(List<IAuctionModel> listOfAuctions, string connectionString)
         {
-            this.ConnectionString = connectionString;
-            this.listOfAuctions = listOfAuctions;
+            this.connectionString = connectionString;
+            this.ListOfAuctions = listOfAuctions;
         }
 
         private void LoadAuctionsFromDatabase()
         {
             string query = "SELECT * FROM Auction";
 
-            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
@@ -38,20 +33,15 @@ namespace BiddingPlatform.Auction
 
                 while (reader.Read())
                 {
-
                     int auctionId = Convert.ToInt32(reader["AuctionID"]);
                     string auctionDescription = reader["AuctionDescription"].ToString();
                     string auctionName = reader["AuctionName"].ToString();
                     float currentMaxSum = Convert.ToSingle(reader["CurrentMaxSum"]);
                     DateTime dateOfStart = Convert.ToDateTime(reader["DateOfStart"]);
-
-
                     List<BasicUser> users = LoadUserFromDatabase(auctionId);
                     List<IBidModel> bids = LoadBidFromDatabase(auctionId);
-
-
                     IAuctionModel auction = new AuctionModel(auctionId, dateOfStart, auctionDescription, auctionName, currentMaxSum, users, bids);
-                    listOfAuctions.Add(auction);
+                    ListOfAuctions.Add(auction);
                 }
             }
         }
@@ -60,7 +50,7 @@ namespace BiddingPlatform.Auction
         {
             List<BasicUser> users = new List<BasicUser>();
 
-            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
             {
                 string query = @"EXEC GetUniqueUsersFromAuctionBids @AuctionID = @auctionId";
                 SqlCommand command = new SqlCommand(query, connection);
@@ -82,13 +72,11 @@ namespace BiddingPlatform.Auction
 
             return users;
         }
-
-
         private List<IBidModel> LoadBidFromDatabase(int auctionID)
         {
             List<IBidModel> bids = new List<IBidModel>();
 
-            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
             {
                 string query = @"EXEC GetBidsFromAuction @AuctionID = @auctionId";
                 SqlCommand command = new SqlCommand(query, connection);
@@ -116,7 +104,7 @@ namespace BiddingPlatform.Auction
         {
             string query = $"SELECT * FROM Users WHERE UserID = {userID}";
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
@@ -124,28 +112,20 @@ namespace BiddingPlatform.Auction
 
                 if (reader.Read())
                 {
-
                     string username = reader["Username"].ToString();
                     string nickname = reader["Nickname"].ToString();
                     string userType = reader["UserType"].ToString();
-
                     BasicUser user;
-
-
                     user = new BasicUser(userID, username, nickname);
-
                     return user;
                 }
             }
-
             return null;
-
         }
 
         public void AddAuctionToRepo(IAuctionModel auction)
         {
-            listOfAuctions.Add(auction);
-            
+            ListOfAuctions.Add(auction);
         }
 
         public void AddToDB(string name, string description, DateTime date, float currentMaxSum)
@@ -153,7 +133,7 @@ namespace BiddingPlatform.Auction
             string query = @"INSERT INTO Auction (DateOfStart, AuctionDescription, AuctionName, CurrentMaxSum) 
                      VALUES (@DateOfStart, @AuctionDescription, @AuctionName, @CurrentMaxSum)";
 
-            using (SqlConnection connection = new SqlConnection(this.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@DateOfStart", date);
@@ -165,26 +145,22 @@ namespace BiddingPlatform.Auction
                 command.ExecuteNonQuery();
             }
         }
-
-
         public void RemoveAuctionFromRepo(IAuctionModel auction)
         {
-            listOfAuctions.Remove(auction);
+            ListOfAuctions.Remove(auction);
         }
 
         public void UpdateAuctionIntoRepo(IAuctionModel oldauction, IAuctionModel newauction)
         {
-            int oldauctionIndex = this.listOfAuctions.FindIndex(auction => auction == oldauction);
+            int oldauctionIndex = this.ListOfAuctions.FindIndex(auction => auction == oldauction);
             if (oldauctionIndex != -1)
             {
-                this.listOfAuctions[oldauctionIndex] = newauction;
+                this.ListOfAuctions[oldauctionIndex] = newauction;
             }
         }
-
         public float GetBidMaxSum(int index)
         {
-            return this.listOfAuctions[index].CurrentMaxBid;
+            return this.ListOfAuctions[index].CurrentMaxBid;
         }
-
     }
 }

@@ -17,10 +17,8 @@ using BiddingPlatform.Auction;
 using BiddingPlatform.Bid;
 using BiddingPlatform.User;
 
-
 namespace BiddingPlatform.GUI.AdminSide
 {
-
     public partial class AdminLiveAuctionPage : Page
     {
         public IAuctionService AuctionService;
@@ -36,13 +34,10 @@ namespace BiddingPlatform.GUI.AdminSide
 
             FirstNameTextbox.Text = AuctionList[0].Name;
             SecondNameTextbox.Text = AuctionList[1].Name;
-            
             FirstDescriptionTextbox.Text = AuctionList[0].Description;
             SecondDescriptionTextbox.Text = AuctionList[1].Description;
-            
             FirstPriceTextbox.Text = AuctionList[0].CurrentMaxBid.ToString();
             SecondPriceTextbox.Text = AuctionList[1].CurrentMaxBid.ToString();
-            
 
             FirstDurationTextbox.Text = (DateTime.Now - AuctionList[0].StartingDate).Hours.ToString();
             SecondDurationTextbox.Text = (DateTime.Now - AuctionList[1].StartingDate).Hours.ToString();
@@ -56,8 +51,8 @@ namespace BiddingPlatform.GUI.AdminSide
 
         private void HandleAddAuctionButtonClick(object sender, RoutedEventArgs e)
         {
-            var AddAuctionPage = new AddAuctionPage(this.AuctionService, this.BidService);
-            NavigationService?.Navigate(AddAuctionPage);
+            var addAuctionPage = new AddAuctionPage(this.AuctionService, this.BidService);
+            NavigationService?.Navigate(addAuctionPage);
         }
     }
 }

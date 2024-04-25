@@ -20,22 +20,22 @@ namespace NUnitMacrow.BidTests
             _bids = new List<IBidModel>();
         }
 
-        public void addBidToRepo(IBidModel bid)
+        public void AddBidToRepo(IBidModel bid)
         {
             _bids.Add(bid);
         }
 
-        public void deleteBidFromRepo(IBidModel bid)
+        public void DeleteBidFromRepo(IBidModel bid)
         {
             _bids.Remove(bid);
         }
 
-        public List<IBidModel> getBids()
+        public List<IBidModel> GetBids()
         {
             return _bids;
         }
 
-        public void updateBidIntoRepo(IBidModel oldbid, IBidModel newbid)
+        public void UpdateBidIntoRepo(IBidModel oldbid, IBidModel newbid)
         {
             int index = _bids.FindIndex(bid => bid.BidId == oldbid.BidId);
             if (index != -1)
@@ -63,11 +63,11 @@ namespace NUnitMacrow.BidTests
 
 
             // Act
-            bidService.addBid(bidId, user, bidSum, bidDate);
+            bidService.AddBid(bidId, user, bidSum, bidDate);
 
 
             // Assert
-            List<IBidModel> bids = mockRepository.getBids();
+            List<IBidModel> bids = mockRepository.GetBids();
             Assert.That(bids.Count, Is.EqualTo(1));
             Assert.That(bids[0].BidId, Is.EqualTo(bidId));
             Assert.That(bids[0].BasicUser, Is.EqualTo(user));
@@ -86,15 +86,15 @@ namespace NUnitMacrow.BidTests
             BasicUser user = new BasicUser(1, "UserName", "User");
             float bidSum = 100.0f;
             DateTime bidDate = DateTime.UtcNow;
-            bidService.addBid(bidId, user, bidSum, bidDate);
+            bidService.AddBid(bidId, user, bidSum, bidDate);
 
 
             // Act
-            bidService.removeBid(bidId, user, bidSum, bidDate);
+            bidService.RemoveBid(bidId, user, bidSum, bidDate);
 
 
             // Assert
-            List<IBidModel> bids = mockRepository.getBids();
+            List<IBidModel> bids = mockRepository.GetBids();
             Assert.That(bids.Count, Is.EqualTo(0));
         }
 
@@ -112,15 +112,15 @@ namespace NUnitMacrow.BidTests
             float newBidSum = 150.0f;
             DateTime oldBidDate = DateTime.UtcNow;
             DateTime newBidDate = DateTime.UtcNow.AddDays(1);
-            bidService.addBid(bidId, oldUser, oldBidSum, oldBidDate);
+            bidService.AddBid(bidId, oldUser, oldBidSum, oldBidDate);
 
 
             // Act
-            bidService.updateBid(bidId, oldUser, oldBidSum, oldBidDate, newUser, newBidSum, newBidDate);
+            bidService.UpdateBid(bidId, oldUser, oldBidSum, oldBidDate, newUser, newBidSum, newBidDate);
 
 
             // Assert
-            List<IBidModel> bids = mockRepository.getBids();
+            List<IBidModel> bids = mockRepository.GetBids();
             Assert.That(bids.Count, Is.EqualTo(1));
             Assert.That(bids[0].BidId, Is.EqualTo(bidId));
             Assert.That(bids[0].BasicUser, Is.EqualTo(newUser));
@@ -145,12 +145,12 @@ namespace NUnitMacrow.BidTests
             float bidSum2 = 150.0f;
             DateTime bidDate2 = DateTime.UtcNow.AddDays(1);
 
-            bidService.addBid(bidId1, user1, bidSum1, bidDate1);
-            bidService.addBid(bidId2, user2, bidSum2, bidDate2);
+            bidService.AddBid(bidId1, user1, bidSum1, bidDate1);
+            bidService.AddBid(bidId2, user2, bidSum2, bidDate2);
 
 
             // Act
-            List<IBidModel> bids = bidService.getBids();
+            List<IBidModel> bids = bidService.GetBids();
 
 
             // Assert

@@ -1,20 +1,7 @@
-﻿using BiddingPlatform.Auction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using BiddingPlatform.Bid;
-using BiddingPlatform.User;
+using BiddingPlatform.Auction;
 
 namespace BiddingPlatform.GUI.AdminSide
 {
@@ -45,7 +32,6 @@ namespace BiddingPlatform.GUI.AdminSide
             string auctionName = NameTextbox.Text;
             string auctionDescription = DescriptionTextbox.Text;
             string auctionDeadlineDateString = DeadlineTextbox.Text;
-       
             if (DateTime.TryParseExact(auctionDeadlineDateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime auctionDeadlineDate))
             {
                 Console.WriteLine("Parsed date: " + auctionDeadlineDate);

@@ -1,4 +1,4 @@
-﻿using System.Configuration;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,14 +27,9 @@ namespace BiddingPlatform
             var bidRepository = new BidRepository(dbConnectionString);
             var bidService = new BidService(bidRepository);
             Page liveAuctionPage = new LiveAuctionPage(auctionService, bidService);
-            Page adminLiveAuctionPage = new AdminLiveAuctionPage(auctionService,bidService);
+            Page adminLiveAuctionPage = new AdminLiveAuctionPage(auctionService, bidService);
             Window mainWindow = new MainWindow(liveAuctionPage, adminLiveAuctionPage);
             mainWindow.Show();
-
-           //  <!-- 
-           //  StartupUri="MainWindow.xaml"
-           //      -->
         }
     }
-
 }

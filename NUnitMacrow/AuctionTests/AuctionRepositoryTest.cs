@@ -44,7 +44,7 @@ namespace NUnitMacrow.AuctionTests
             auction.name = "Test";
             auction.startingDate = DateTime.MinValue;
             auctionRepository.AddAuctionToRepo(auction);
-            Assert.That(auctionRepository.listOfAuctions.Last().auctionId, Is.EqualTo(99));
+            Assert.That(auctionRepository.ListOfAuctions.Last().auctionId, Is.EqualTo(99));
         }
 
         [Test]
@@ -59,9 +59,9 @@ namespace NUnitMacrow.AuctionTests
             auction.name = "Test";
             auction.startingDate = DateTime.MinValue;
             auctionRepository.AddAuctionToRepo(auction);
-            int beforeRemoval = auctionRepository.listOfAuctions.Count;
+            int beforeRemoval = auctionRepository.ListOfAuctions.Count;
             auctionRepository.RemoveAuctionFromRepo(auction);
-            int afterRemoval = auctionRepository.listOfAuctions.Count;
+            int afterRemoval = auctionRepository.ListOfAuctions.Count;
             Assert.That(beforeRemoval, Is.EqualTo(afterRemoval + 1));
         }
 
@@ -86,15 +86,15 @@ namespace NUnitMacrow.AuctionTests
             newAuction.startingDate = DateTime.MinValue;
 
             auctionRepository.UpdateAuctionIntoRepo(auction, newAuction);
-            Assert.That(auctionRepository.listOfAuctions.Contains(auction), Is.False);
-            Assert.That(auctionRepository.listOfAuctions[1].auctionId, Is.EqualTo(100));
+            Assert.That(auctionRepository.ListOfAuctions.Contains(auction), Is.False);
+            Assert.That(auctionRepository.ListOfAuctions[1].auctionId, Is.EqualTo(100));
         }
 
         [Test]
         public void TestRepoConstructor()
         {
             IAuctionRepository auctionRepository = new AuctionRepository("Data Source=DESKTOP-LF9HLFA\\SQLEXPRESS;Initial Catalog=ISSsecuristii;Integrated Security=true;");
-            Assert.That(auctionRepository.listOfAuctions.Count, Is.EqualTo(6));
+            Assert.That(auctionRepository.ListOfAuctions.Count, Is.EqualTo(6));
         }
 
         [Test]
@@ -110,7 +110,7 @@ namespace NUnitMacrow.AuctionTests
             IAuctionRepository auctionRepository = new AuctionRepository("Data Source=DESKTOP-LF9HLFA\\SQLEXPRESS;Initial Catalog=TESTINGISSsecuristii;Integrated Security=true;");
             auctionRepository.AddToDB("Test", "Test", DateTime.Now, 100);
             IAuctionRepository resultingRepository = new AuctionRepository("Data Source=DESKTOP-LF9HLFA\\SQLEXPRESS;Initial Catalog=TESTINGISSsecuristii;Integrated Security=true;");
-            Assert.That(resultingRepository.listOfAuctions.Count, Is.EqualTo(1));
+            Assert.That(resultingRepository.ListOfAuctions.Count, Is.EqualTo(1));
         }
     }
 }

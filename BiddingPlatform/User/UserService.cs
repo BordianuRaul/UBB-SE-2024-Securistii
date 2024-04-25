@@ -12,10 +12,10 @@ namespace BiddingPlatform.User
 
         public UserService(IUserRepository userRepository)
         {
-            UserRepository = userRepository; 
+            UserRepository = userRepository;
         }
 
-        private string generateNickname()
+        private string GenerateNickname()
         {
             const int RANDOM_RANGE_MINIMUM_VALUE = 100000;
             const int RANDOM_RANGE_MAXIMUM_VALUE = 1000000;
@@ -24,32 +24,32 @@ namespace BiddingPlatform.User
             return "MaliciousUser" + randomId;
         }
 
-        public void addBasicUser(int id, string username)
+        public void AddBasicUser(int id, string username)
         {
-            IUserTemplate toAdd = new BasicUser(id, username, generateNickname());
-            this.UserRepository.addUserToRepo(toAdd);
+            IUserTemplate toAdd = new BasicUser(id, username, GenerateNickname());
+            this.UserRepository.AddUserToRepo(toAdd);
         }
 
-        public void addAdminUser(int id, string username)
+        public void AddAdminUser(int id, string username)
         {
             IUserTemplate toAdd = new AdminUser(id, username);
-            this.UserRepository.addUserToRepo(toAdd);
+            this.UserRepository.AddUserToRepo(toAdd);
         }
 
-        public void removeUser(int id, string username)
+        public void RemoveUser(int id, string username)
         {
             IUserTemplate toremove = new UserTemplate(id, username);
-            this.UserRepository.removeUserFromRepo(toremove);
+            this.UserRepository.RemoveUserFromRepo(toremove);
         }
 
-        public void updateUser(int id, string oldname, string newname)
+        public void UpdateUser(int id, string oldname, string newname)
         {
             IUserTemplate olduser = new UserTemplate(id, oldname);
             IUserTemplate newuser = new UserTemplate(id, newname);
-            this.UserRepository.updateUserIntoRepo(olduser, newuser);
+            this.UserRepository.UpdateUserIntoRepo(olduser, newuser);
         }
 
-        public List<IUserTemplate> getListOfUsers()
+        public List<IUserTemplate> GetListOfUsers()
         {
             return this.UserRepository.GetListOfUsers();
         }

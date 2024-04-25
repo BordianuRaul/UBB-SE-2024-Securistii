@@ -10,18 +10,18 @@ namespace BiddingPlatform.User
     public class UserRepository : IUserRepository
     {
         private string ConnectionString { get; set; }
-        public List<IUserTemplate> listOfUsers { get; set; }
+        public List<IUserTemplate> ListOfUsers { get; set; }
         public UserRepository(string connectionString)
         {
             this.ConnectionString = connectionString;
-            this.listOfUsers = new List<IUserTemplate>();
+            this.ListOfUsers = new List<IUserTemplate>();
             this.LoadUsersFromDataBase();
         }
 
         public UserRepository(List<IUserTemplate> _listOfUsers, string connectionString)
         {
             this.ConnectionString = connectionString;
-            this.listOfUsers = _listOfUsers;
+            this.ListOfUsers = _listOfUsers;
         }
         private void LoadUsersFromDataBase()
         {
@@ -49,34 +49,32 @@ namespace BiddingPlatform.User
                         user = new AdminUser(userId, username);
                     }
 
-                    this.addUserToRepo(user);
+                    this.AddUserToRepo(user);
                 }
             }
         }
 
-        public void addUserToRepo(IUserTemplate User) 
+        public void AddUserToRepo(IUserTemplate user)
         {
-            // it should be safe to delete this line
-            // this.ConnectionString = "Data Source=DESKTOP-UELLOC9;Initial Catalog=BidingSystem;Integrated Security=true";
-            this.listOfUsers.Add(User);
+            this.ListOfUsers.Add(user);
         }
 
-        public void removeUserFromRepo(IUserTemplate User)
+        public void RemoveUserFromRepo(IUserTemplate user)
         {
-            this.listOfUsers.Remove(User);
+            this.ListOfUsers.Remove(user);
         }
 
-        public void updateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser)
+        public void UpdateUserIntoRepo(IUserTemplate olduser, IUserTemplate newuser)
         {
-            int olduserIndex = this.listOfUsers.FindIndex(user => user == olduser);
+            int olduserIndex = this.ListOfUsers.FindIndex(user => user == olduser);
             if (olduserIndex != -1)
             {
-                this.listOfUsers[olduserIndex] = newuser;
+                this.ListOfUsers[olduserIndex] = newuser;
             }
         }
         public List<IUserTemplate> GetListOfUsers()
         {
-            return this.listOfUsers;
+            return this.ListOfUsers;
         }
     }
 }
