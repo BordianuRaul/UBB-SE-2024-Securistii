@@ -19,7 +19,7 @@ namespace BiddingPlatform.User
             this.UserID = givenUserID;
         }
 
-        public string getNickname() {  return nickname; }
-        public void setNickname(string nicknameToBeSet) {  nickname = nicknameToBeSet; }
+        public string GetNickname() {  return nickname; }
+        public void SetNickname(string nicknameToBeSet) {  nickname = nicknameToBeSet; }
     }
 }

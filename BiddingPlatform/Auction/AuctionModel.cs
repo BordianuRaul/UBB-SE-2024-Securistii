@@ -16,7 +16,7 @@ namespace BiddingPlatform.Auction
         public string Description {  get; set; }
         public string Name { get; set; }
         public float CurrentMaxSum {  get; set; }
-        private List<BasicUser> ListOfUsers { get; set; }
+        public List<BasicUser> ListOfUsers { get; set; }
         public List<IBidModel> ListOfBids { get; set; }
 
         public AuctionModel(int _id, DateTime startingDate, string description, string name, float currentMaxSum, List<BasicUser> listOfUsers, List<IBidModel> listOfBids)

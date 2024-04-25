@@ -35,17 +35,17 @@ namespace BiddingPlatform.GUI
             this.BidService = bidService;
             Auctions = this.AuctionService.getAuctions();
             
-            auctionNameTextBox1.Text= Auctions[0].name;
-            auctionNameTextBox2.Text = Auctions[1].name;
+            auctionNameTextBox1.Text= Auctions[0].Name;
+            auctionNameTextBox2.Text = Auctions[1].Name;
 
-            auctionDescriptionTextBox1.Text = Auctions[0].description;
-            auctionDescriptionTextBox2.Text = Auctions[1].description;
+            auctionDescriptionTextBox1.Text = Auctions[0].Description;
+            auctionDescriptionTextBox2.Text = Auctions[1].Description;
 
-            currentBidMinimumPriceTextBox1.Text = Auctions[0].currentMaxSum.ToString();
-            currentBidMinimumPriceTextBox2.Text = Auctions[1].currentMaxSum.ToString();
+            currentBidMinimumPriceTextBox1.Text = Auctions[0].CurrentMaxSum.ToString();
+            currentBidMinimumPriceTextBox2.Text = Auctions[1].CurrentMaxSum.ToString();
             
-            timeUntilAuctionEndsTextBox1.Text = (DateTime.Now - Auctions[0].startingDate).Hours.ToString();
-            timeUntilAuctionEndsTextBox2.Text = (DateTime.Now - Auctions[1].startingDate).Hours.ToString();
+            timeUntilAuctionEndsTextBox1.Text = (DateTime.Now - Auctions[0].StartingDate).Hours.ToString();
+            timeUntilAuctionEndsTextBox2.Text = (DateTime.Now - Auctions[1].StartingDate).Hours.ToString();
         }
 
 
